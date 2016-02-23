@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1c447ca2a20cf416ea4bc488c120175b
+timeCreated: 1455768431
+licenseType: Free
+NativeFormatImporter:
+  userData: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<!-- Generator: Adobe Illustrator
+    16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\r\n<!DOCTYPE svg
+    PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\r\n<svg
+    version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"
+    x=\"0px\" y=\"0px\"\r\n\t width=\"100px\" height=\"100px\" viewBox=\"-2.5 0 100
+    100\" enable-background=\"new -2.5 0 100 100\" xml:space=\"preserve\">\r\n<path
+    opacity=\"0.01\" fill=\"#343538\" d=\"M97.5,83.333C97.5,92.54,90.034,100,80.833,100H14.167C4.966,100-2.5,92.54-2.5,83.333\r\n\tV16.665C-2.5,7.459,4.966,0,14.167,0h66.666C90.034,0,97.5,7.459,97.5,16.665V83.333z\"/>\r\n<g>\r\n\t<path
+    fill=\"#FFFFFF\" d=\"M84.223,74.189H37.671c-6.236,0-11.223-1.078-14.935-3.266c-4.647-2.729-6.972-7.012-6.972-12.836\r\n\t\tc0-3.021,0.681-6.121,2.049-9.264c0.491-1.142,1.659-3.305,3.513-6.49l1.464,0.921c-0.712,1.499-1.415,2.995-2.096,4.492\r\n\t\tc-0.945,2.31-1.418,4.373-1.418,6.196c0,3.845,2.019,6.814,6.049,8.931c3.614,1.89,8.188,2.826,13.721,2.826h41.317v-1.316\r\n\t\tc0-3.643-0.438-6.604-1.318-8.903c-0.871-2.295-2.373-4.254-4.488-5.888l3.758-7.946c1.433,1.782,2.293,2.9,2.595,3.355\r\n\t\tc2.202,3.643,3.313,8.949,3.313,15.91V74.189L84.223,74.189z\"/>\r\n\t<polygon
+    fill=\"#FFFFFF\" points=\"49.971,34.281 46.121,41.281 38.304,37.026 42.047,30.034
+    \t\"/>\r\n\t<polygon fill=\"#FFFFFF\" points=\"61.271,30.104 57.333,37.061 49.516,32.714
+    53.299,25.811 \t\"/>\r\n</g>\r\n</svg>\r\n"
+  assetBundleName: 
+  assetBundleVariant: 

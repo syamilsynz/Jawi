@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: a5dc9212b4d084a238348e8e66d535a8
+timeCreated: 1455509017
+licenseType: Free
+NativeFormatImporter:
+  userData: "<?xml version=\"1.0\" standalone=\"no\"?>\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD
+    SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n<svg width=\"100%\"
+    height=\"100%\" viewBox=\"0 0 200 201\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"
+    xmlns:xlink=\"http://www.w3.org/1999/xlink\" xml:space=\"preserve\" style=\"fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;\">\n
+    \   <g transform=\"matrix(1,0,0,1,-0,-25.0139)\">\n        <g id=\"Artboard1\"
+    transform=\"matrix(0.25,2.85315e-13,2.5871e-12,0.334667,0,25.0139)\">\n            <clipPath
+    id=\"_clip1\">\n                <rect x=\"0\" y=\"0\" width=\"800\" height=\"600\"/>\n
+    \           </clipPath>\n            <g clip-path=\"url(#_clip1)\">\n                <g
+    transform=\"matrix(8.72729,-7.44032e-12,-6.74652e-11,6.51939,-42.8342,-23.0119)\">\n
+    \                   <rect x=\"0.248\" y=\"-0.142\" width=\"99.004\" height=\"99.184\"
+    style=\"fill:rgb(157,199,223);\"/>\n                </g>\n                <g transform=\"matrix(4.2412,-3.61577e-12,-3.27861e-11,3.16823,-651.551,-90.0471)\">\n
+    \                   <circle cx=\"247.282\" cy=\"123.194\" r=\"79.154\" style=\"fill:rgb(255,250,0);\"/>\n
+    \               </g>\n                <g transform=\"matrix(4.2412,-3.61577e-12,-3.27861e-11,3.16823,-542.845,-58.1977)\">\n
+    \                   <circle cx=\"190.67\" cy=\"82.125\" r=\"12.715\" style=\"fill:rgb(119,118,96);\"/>\n
+    \               </g>\n                <g transform=\"matrix(4.2412,-3.61577e-12,-3.27861e-11,3.16823,-257.118,-51.522)\">\n
+    \                   <circle cx=\"190.67\" cy=\"82.125\" r=\"12.715\" style=\"fill:rgb(119,118,96);\"/>\n
+    \               </g>\n                <g transform=\"matrix(4.2412,-3.61577e-12,-3.27861e-11,3.16823,-568.211,-7.59079)\">\n
+    \                   <rect x=\"187.499\" y=\"124.407\" width=\"78.421\" height=\"15.136\"
+    style=\"fill:rgb(119,118,96);\"/>\n                </g>\n            </g>\n        </g>\n
+    \   </g>\n</svg>\n"
+  assetBundleName: 
+  assetBundleVariant: 
