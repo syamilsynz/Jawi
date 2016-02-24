@@ -1,18 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Managers/SaveManager.cs">
-    <Files>
-      <File FileName="Assets/Scripts/QuestionLibrary.cs" Line="24" Column="34" />
-      <File FileName="Assets/Scripts/Coin.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Managers/SaveManager.cs" Line="40" Column="60" />
-      <File FileName="Assets/Scripts/Managers/GameManager.cs" Line="148" Column="1" />
-      <File FileName="Assets/Scripts/Managers/JawiManager.cs" Line="103" Column="55" />
-      <File FileName="Assets/Scripts/Main.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FlashCard.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Managers/GUIManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/AnswerLibrary.cs" Line="50" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
