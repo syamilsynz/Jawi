@@ -8,6 +8,7 @@ public class SaveManager : MonoBehaviour
     public static int score = 0;            // player score
     public static int questionID = 1;       // question id for current category
     public static string levelName;
+    public static int levelId;
 
     public void SetQuestionCategory(int id)
     {
@@ -20,6 +21,13 @@ public class SaveManager : MonoBehaviour
     {
         PlayerPrefs.SetString("Level Name", name);
         levelName = name;
+        SaveData();
+    }
+
+    public void SetLevel(int level)
+    {
+        PlayerPrefs.SetInt("Level ID", level);
+        levelId = level;
         SaveData();
     }
 
@@ -39,6 +47,7 @@ public class SaveManager : MonoBehaviour
             score = PlayerPrefs.GetInt("Score");
             questionID = PlayerPrefs.GetInt("Question ID");
             levelName = PlayerPrefs.GetString("Level Name");
+            levelId = PlayerPrefs.GetInt("Level ID");
         }
 
         PlayerPrefs.Save();
@@ -52,6 +61,7 @@ public class SaveManager : MonoBehaviour
         PlayerPrefs.SetInt("Score", score);
         PlayerPrefs.SetInt("Question ID", questionID);
         PlayerPrefs.SetString("Level Name", levelName);
+        PlayerPrefs.SetInt("Level ID", levelId);
 
         PlayerPrefs.Save();
     }
