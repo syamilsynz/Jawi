@@ -683,7 +683,7 @@ public class GameManager : MonoBehaviour
         {
             // level complete
             // Unlock Next Level
-            PlayerPrefs.SetString((PlayerPrefs.GetInt("Category") + 1).ToString(), (PlayerPrefs.GetInt("Category") + 1).ToString());
+            PlayerPrefs.SetInt((PlayerPrefs.GetInt("Level ID") + 1).ToString(), (PlayerPrefs.GetInt("Level ID") + 1));
             // Pop Up level Complete Panel
 
             SceneManager.LoadScene("main");
