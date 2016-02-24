@@ -1,5 +1,5 @@
 *.meta
-*.csproject
+*.csproj
 Library/
 ProjectSettings/
 *.sln
