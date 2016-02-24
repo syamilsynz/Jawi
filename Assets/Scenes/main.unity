@@ -885,6 +885,7 @@ GameObject:
   - 222: {fileID: 398682260}
   - 114: {fileID: 398682259}
   - 114: {fileID: 398682258}
+  - 114: {fileID: 398682261}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -907,7 +908,7 @@ RectTransform:
   m_RootOrder: 6
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -75, y: -878}
+  m_AnchoredPosition: {x: -126, y: -913}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &398682258
@@ -984,6 +985,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 398682256}
+--- !u!114 &398682261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 398682256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9095257efa7c84ce58a0eee40c1a477a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelId: 1
 --- !u!1 &428207330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,6 +1536,7 @@ GameObject:
   - 222: {fileID: 729146427}
   - 114: {fileID: 729146426}
   - 114: {fileID: 729146425}
+  - 114: {fileID: 729146428}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -1545,7 +1559,7 @@ RectTransform:
   m_RootOrder: 7
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 108, y: -824}
+  m_AnchoredPosition: {x: 57, y: -814}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &729146425
@@ -1622,6 +1636,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 729146423}
+--- !u!114 &729146428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 729146423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9095257efa7c84ce58a0eee40c1a477a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelId: 2
 --- !u!1 &757343110
 GameObject:
   m_ObjectHideFlags: 0
@@ -2287,6 +2313,7 @@ GameObject:
   - 222: {fileID: 1396752507}
   - 114: {fileID: 1396752506}
   - 114: {fileID: 1396752505}
+  - 114: {fileID: 1396752508}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -2386,6 +2413,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1396752503}
+--- !u!114 &1396752508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1396752503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9095257efa7c84ce58a0eee40c1a477a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelId: 3
 --- !u!1 &1466615803
 GameObject:
   m_ObjectHideFlags: 0
@@ -2728,7 +2767,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: 3
 --- !u!222 &1509041568
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4063,7 +4102,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: 2
 --- !u!222 &1890858184
 CanvasRenderer:
   m_ObjectHideFlags: 0
