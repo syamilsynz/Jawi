@@ -6,6 +6,8 @@ using UnityEngine.UI;
 using System.Text.RegularExpressions;
 using UnityEngine.SceneManagement;
 using SVGImporter;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class GameManager : MonoBehaviour 
 {
@@ -110,6 +112,7 @@ public class GameManager : MonoBehaviour
         guiManager.UpdateCoinInformation();
 
 		InitLevel();
+
 
 	}
 	
@@ -341,14 +344,12 @@ public class GameManager : MonoBehaviour
         {
             
             guiManager.targetBoxMaterial.color = new Color32(99, 99, 99, 255);
-//            guiManager.letterBoxMaterial.color = new Color32(99, 99, 99, 255);
             return;
         }
             
         if (Enumerable.SequenceEqual(playerAnswer, answerLib.setQuestion[questionId - 1].answerJawi))
         {
             guiManager.targetBoxMaterial.color = new Color32(39, 174, 96, 255);
-//            guiManager.letterBoxMaterial.color = new Color32(39, 174, 96, 255);
             StartCoroutine( CorrectAnswer());
 
             SaveManager.coinAmount = SaveManager.coinAmount + 10;
@@ -359,7 +360,6 @@ public class GameManager : MonoBehaviour
         else
         {
             guiManager.targetBoxMaterial.color = new Color32(231, 76, 60, 255);
-//            guiManager.letterBoxMaterial.color = new Color32(231, 76, 60, 255);
             Debug.Log("U get wrong answer");
         }
 
@@ -596,6 +596,8 @@ public class GameManager : MonoBehaviour
 				yield return null;
 			}*/
                         letterParent.transform.FindChild("letter" + (i + 1)).GetComponent<RectTransform>().localPosition = endPosition;
+            // Enable event click
+            EventSystemManager.SetEventTriggerState(letterParent.transform.FindChild("letter" + (i + 1)).gameObject.GetComponent<EventTrigger>(), EventTriggerType.PointerDown, "LetterClick2", UnityEventCallState.RuntimeOnly);
 //            letterParent.transform.FindChild("letter" + (i + 1)).GetComponent<BoxCollider2D>().enabled = true;
 			yield return null;
 		}
@@ -873,6 +875,8 @@ public class GameManager : MonoBehaviour
 
 		SubmitWord();
 
+
+        EventSystemManager.SetEventTriggerState(letterParent.transform.FindChild("letter" + (target)).gameObject.GetComponent<EventTrigger>(), EventTriggerType.PointerDown, "LetterClick2", UnityEventCallState.Off);
 
         isCurrentlyMoving = false;
 	}

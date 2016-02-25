@@ -3,13 +3,22 @@ using System.Collections;
 
 public class CameraFix : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public float orthographicSize = 5;
+    public float aspect = 1.33333f;
+
+    void Start()
+    {
+        Camera.main.projectionMatrix = Matrix4x4.Ortho(
+            -orthographicSize * aspect, orthographicSize * aspect,
+            -orthographicSize, orthographicSize,
+            GetComponent<Camera>().nearClipPlane, GetComponent<Camera>().farClipPlane);
+    }
+
+    void Update()
+    {
+        Camera.main.projectionMatrix = Matrix4x4.Ortho(
+            -orthographicSize * aspect, orthographicSize * aspect,
+            -orthographicSize, orthographicSize,
+            GetComponent<Camera>().nearClipPlane, GetComponent<Camera>().farClipPlane);
+    }
 }
