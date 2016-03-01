@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4396854
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: logo whatsapp
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 348
+    topology: 0
+    firstVertex: 0
+    vertexCount: 120
+    localAABB:
+      m_Center: {x: 0, y: 0, z: -0}
+      m_Extent: {x: 0.5, y: 0.5, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 00000100020001000000030004000500060004000700050008000700040008000900070008000a00090008000b000a000c000b0008000c000d000b000e000d000c000e000f000d0010000f000e00100011000f0010001200110013001200100013001400120015001400130015001600140015001700160018001700150018001900170018001a0019001b001a0018001c001a001b001c001d001a001e001d001c001e001f001d001e0020001f00210020001e0021002200200021002300220024002300210025002300240025002600230027002600250027002800260027002900280029002a002b0027002a0029002c002a0027002d002a002c002d002e002a002f002e002d002e002f003000310009000a0032000900310032003300090034003300320034003500330036003500340036003700350038003700360039003700380039003a0037003b003a0039003b003c003a003d003c003b003d003e003c003f003e003d0040003e003f00400041003e0042004100400042004300410044004300420044004500430046004500440047004500460047004800450049004800470049004a0048004b004a0049004b004c004a004d004c004b002b004c004d004c002b002a004e004f0050004e0051004f00520051004e0052005300510054005300520054005500530054005600550054005700560058005700540058005900570058005a00590058005b005a005c005d005e005f005b0058005f005c005b005f005d005c0060005d005f0061005d006000610062005d00610063006200610064006300650064006100660064006500660067006400660068006700690068006600680069006a006b006c006d006b006e006c006f006e006b006f0070006e006f0071007000720071006f007300710072007300740071007500740073004e0074007500500074004e00500076007400760050007700
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 5
+    m_VertexCount: 120
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1920
+    _typelessdata: 000000bf000000bf0000008046cc89ff0000003f0000003f0000008046cc89ff0000003f000000bf0000008046cc89ff000000bf0000003f0000008046cc89ff0847693e5236b5be00000080ffffffff14e8b33ec40881be00000080ffffffff82d4963e581c9ebe00000080ffffffff0c02cb3e90af3dbe00000080ffffffffe0671c3ed877c5be00000080ffffffff4642db3e909be1bd00000080ffffffffc0fa7f3efa6b82be00000080ffffffffb403473e96ad95be00000080ffffffffe887913d2402cebe00000080ffffffff1001073e123ba3be00000080ffffffff80abe73c8e1ecfbe00000080ffffffff48ce823d965baabe00000080ffffffff70f7c7bc666bcdbe00000080ffffffff80abe73cd448abbe00000080ffffffff8084b6bcc256a9be00000080ffffffffbc7e01be0200c0be00000080ffffffff40cbf3bde65c9abe00000080ffffffff44a832be4a63b4be00000080ffffffffd84727beccb48dbe00000080ffffffff9f7698bec09aa3be00000080ffffffff07ebcfbefa7edabe00000080ffffffff2eff81bed0ae42be00000080ffffffff94d489be744b2bbe00000080ffffffffd93da9be08a24ebe00000080ffffffffc05bb0be043535be00000080ffffffffca8996be0004f3bd00000080ffffffff12d5bbbe10d6ffbd00000080ffffffffaa2b9fbe981289bd00000080ffffffff4290a3be80a156bc00000080fffffffff38ec3be682390bd00000080ffffffff211fa4be80206a3c00000080ffffffffe431a3bef84e4c3d00000080ffffffff0877c7be802968bc00000080ffffffffdcf4c7be80206a3c00000080ffffffff5e119cbe585bf13d00000080ffffffff6fd8c6beb0cc693d00000080ffffffffe4838ebe4ab0383e00000080ffffffff8c8476be5ca7713e00000080ffffffffc4f4c4bde319d43e00000080ffffffff440d46be520f913e00000080ffffffff274ebebe7c140e3e00000080ffffffff9e0caebea0f35a3e00000080ffffffff2a5c2fbea9d9c33e00000080ffffffffa6f296beceaa8f3e00000080ffffffff22be73beb2bfac3e00000080ffffffff0439983eac6054be00000080ffffffffa47aab3e98691bbe00000080ffffffffdecde33ee063e9bc00000080ffffffff1e08b93e30d3b6bd00000080fffffffffce8e43e80206a3c00000080ffffffff5427c03e607daebc00000080ffffffffdecde33eb0cc693d00000080ffffffff9214c13e80206a3c00000080ffffffff5427c03ef84e4c3d00000080ffffffff4642db3e7c140e3e00000080ffffffff1e08b93e585bf13d00000080ffffffff0c02cb3ea0f35a3e00000080ffffffffa47aab3e4ab0383e00000080ffffffff14e8b33eceaa8f3e00000080ffffffff0439983e5ca7713e00000080ffffffffc0fa7f3e520f913e00000080ffffffff82d4963eb2bfac3e00000080ffffffffb403473ef050a43e00000080ffffffff0847693ea9d9c33e00000080ffffffff1001073e6adeb13e00000080ffffffffe0671c3ee319d43e00000080ffffffff48ce823deffeb83e00000080ffffffff80abe73cddeab93e00000080ffffffffe887913d7aa5dc3e00000080ffffffffc088efbbeffeb83e00000080ffffffff80abe73c98c0dd3e00000080ffffffff682c9abd6adeb13e00000080ffffffff60916dbc7aa5dc3e00000080ffffffffd2180dbef050a43e00000080ffffffff401d0f3d181c25be00000080ffffffff8043a83dd092c0bd00000080ffffffff6858c53d5054afbd00000080ffffffff00529b3da047bebd00000080ffffffff0052d53bf40b16be00000080ffffffffb0bd413d483ca0bd00000080ffffffffe82631bd30c1e2bd00000080ffffffff8084b63b809150bd00000080ffffffff806464bc906d0bbd00000080ffffffff9098f5bc80608ebc00000080ffffffffe843d7bd00db33bd00000080ffffffffb0ea73bd70fab33c00000080ffffffff50af94bda85b3d3d00000080ffffffff004396bdb8654e3d00000080ffffffff88fe89bdf04b7d3d00000080ffffffff90900fbdfc82dd3d00000080ffffffff881928bd387abc3d00000080ffffffff2e1711be40abe73b00000080ffffffff0a9820bef098013d00000080ffffffff327236bea089b03d00000080ffffffff9cbf89bd04784b3e00000080ffffffffd8b191bd6abc543e00000080ffffffff0cb5a6bdbcde5d3e00000080ffffffff247a39bed443f43d00000080ffffffff044336be266b143e00000080ffffffff5c9de3bd1283603e00000080ffffffff58e201bed43e5d3e00000080ffffffff2a5221beb870403e00000080ffffffff06640fbeacff533e00000080ffffffffe4e9553e889832be00000080ffffffff6c3f723e280a14be00000080ffffffff78976b3e346d1fbe00000080ffffffff9001793ed0b4fdbd00000080ffffffffc8112b3e60ab44be00000080ffffffffacec7b3e20a2d1bd00000080ffffffffb4c97a3ed092c0bd00000080ffffffff00da0f3e546048be00000080ffffffffd8c5ed3df47644be00000080ffffffffd0bd473e884284bd00000080ffffffffc0956c3d48692fbe00000080ffffffffcc6c103e607424bd00000080ffffffff082a033ee0e646bd00000080ffffffff
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: -0}
+    m_Extent: {x: 0.5, y: 0.5, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: logo whatsapp
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635923883007220540
+  _documentAsset: {fileID: 11453620}
+  _sharedMesh: {fileID: 4396854}
+  _antialiasing: 0
+  _antialiasingWidth: 0
+  _generateCollider: 0
+  _keepSVGFile: 0
+  _ignoreSVGCanvas: 1
+  _colliderShape: []
+  _format: 2
+  _useGradients: 1
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 0.5}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients: []
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  _layers: []
+--- !u!114 &11453620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: 
+  _title: 
+  _description: 

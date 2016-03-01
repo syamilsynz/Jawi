@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
 	public Text questionRatioText;
     private int totalQuestion;
 	public GameObject answerGameObject; 
-	private AnswerLibrary answerLib;
+    public AnswerLibrary answerLib;
     private string[] letterCollections;              // Set of correct letter and wrong letter to be used for choosing an answer
 	public Text correctText;
 	
@@ -41,6 +41,8 @@ public class GameManager : MonoBehaviour
 	
 	private float offsetX1 = 0;                     // X Offset for row 1
 	private float offsetX2 = 0;                     // X offset for row 2
+
+    public float offsetBoxY = 0;
 
 	// Input checking
 	private bool touching = false;
@@ -213,14 +215,22 @@ public class GameManager : MonoBehaviour
 		// uncentered related targetboxs in row 1
         for (int i = 0; i < totalBoxInRowOne; i++)
 		{
+//            float pos = targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition.x - offsetX1;     
+//            targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition = new Vector2 (pos, targetParent.GetComponent<RectTransform>().localPosition.y);
+
             float pos = targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition.x - offsetX1;     
-            targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition = new Vector2 (pos, targetParent.GetComponent<RectTransform>().localPosition.y);
+            targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition = new Vector2 (pos, targetParent.transform.parent.GetComponent<RectTransform>().localPosition.y);
+
+
 		}
         // uncentered related targetboxs in row 2
         for (int i = totalBoxInRowOne; i < (totalBoxInRowOne + totalBoxInRowTwo); i++)
 		{
+//            float pos = targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition.x - offsetX2;
+//            targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition = new Vector2 (pos, targetParent.GetComponent<RectTransform>().localPosition.y - offsetBoxY);
+
             float pos = targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition.x - offsetX2;
-            targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition = new Vector2 (pos, targetParent.GetComponent<RectTransform>().localPosition.y - 100.5f);
+            targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition = new Vector2 (pos, targetParent.transform.parent.GetComponent<RectTransform>().localPosition.y - offsetBoxY);
 
 		}
 		
@@ -256,7 +266,6 @@ public class GameManager : MonoBehaviour
 //            letterParent.transform.FindChild("letter" + (i + 1)).GetComponent<Collider2D>().enabled = true;
 
             sourceParent.transform.FindChild("sourceBox"+(i + 1)).gameObject.SetActive(true);  
-//			tempPositions[i] = sourceParent.transform.FindChild("sourceBox" + (i + 1)).position;
             tempPositions[i] = sourceParent.transform.FindChild("sourceBox" + (i + 1)).GetComponent<RectTransform>().localPosition;
 			
 		}
@@ -295,14 +304,20 @@ public class GameManager : MonoBehaviour
         // centered row 1
         for (int i = 0; i < totalBoxInRowOne; i++)
 		{
+//            float pos = targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition.x + offsetX1;
+//            targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition = new Vector2 (pos, targetParent.GetComponent<RectTransform>().localPosition.y);
+
             float pos = targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition.x + offsetX1;
-            targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition = new Vector2 (pos, targetParent.GetComponent<RectTransform>().localPosition.y);
+            targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition = new Vector2 (pos, targetParent.transform.parent.GetComponent<RectTransform>().localPosition.y);
 		}
         // centered row 2
         for (int i = totalBoxInRowOne; i < totalBoxInRowOne + totalBoxInRowTwo; i++)
 		{
+//            float pos = targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition.x + offsetX2;
+//            targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition = new Vector2 (pos, targetParent.GetComponent<RectTransform>().localPosition.y - offsetBoxY);
+
             float pos = targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition.x + offsetX2;
-            targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition = new Vector2 (pos, targetParent.GetComponent<RectTransform>().localPosition.y - 100.5f);
+            targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition = new Vector2 (pos, targetParent.transform.parent.GetComponent<RectTransform>().localPosition.y - offsetBoxY);
 		}
 
 
@@ -355,7 +370,7 @@ public class GameManager : MonoBehaviour
             SaveManager.coinAmount = SaveManager.coinAmount + 10;
             SaveManager.SaveData();
 
-            guiManager.coinText.text = "Coin : " + SaveManager.coinAmount.ToString();
+            guiManager.coinText.text = "x " + SaveManager.coinAmount.ToString();
         }
         else
         {
@@ -374,12 +389,14 @@ public class GameManager : MonoBehaviour
 
 
         answerjawiSVG.GetComponent<SVGImage>().vectorGraphics = answerLib.setQuestion[questionId - 1].answerSVG;
+
+        guiManager.LevelComplete();
               
 		yield return new WaitForSeconds(2f);
 
 		correctText.gameObject.SetActive(false);
         answerjawiSVG.SetActive(false);
-		UpdateQuestion();
+		//UpdateQuestion();
 	}
 	
     public void LetterClick2(GameObject go)
@@ -678,6 +695,8 @@ public class GameManager : MonoBehaviour
         SaveManager.questionID++;
         SaveManager.SaveData();
         Debug.Log("player pref : " + PlayerPrefs.GetInt("Question ID"));
+
+        guiManager.completeLevelParent.SetActive(false);
 
         if (SaveManager.questionID <= totalQuestion)
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
