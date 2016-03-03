@@ -25,6 +25,9 @@ public class GUIManager : MonoBehaviour
 
     public GameObject backgroundCover;      // Background to hide gameplay
 
+    public Button btnOpenOneLetterWatchAd;
+    public Button btnOpenOneLetter;
+
 	// Use this for initialization
 	void Start () 
     {
@@ -49,6 +52,7 @@ public class GUIManager : MonoBehaviour
     public void BuyCoin(int value)
     {
         SaveManager.coinAmount = SaveManager.coinAmount + value;
+        SaveManager.SaveData();
         UpdateCoinInformation();
     }
 
