@@ -61,7 +61,6 @@ public class GameManager : MonoBehaviour
 
     private GUIManager guiManager;
     public GameObject canvasScript;
-    public GameObject answerjawiSVG;
 
     public void ClearPlayerAnswer(int index)
     { 
@@ -343,7 +342,7 @@ public class GameManager : MonoBehaviour
 
         StartCoroutine(ResetLetters());
 
-        guiManager.targetBoxMaterial.color = new Color32(99, 99, 99, 255);
+        guiManager.targetBoxMaterial.color = new Color32(65, 65, 65, 255);
 
 		yield return 0;
 
@@ -358,7 +357,7 @@ public class GameManager : MonoBehaviour
             ||  System.Array.Exists(playerAnswer, element => element == string.Empty))
         {
             
-            guiManager.targetBoxMaterial.color = new Color32(99, 99, 99, 255);
+            guiManager.targetBoxMaterial.color = new Color32(65, 65, 65, 255);
             return;
         }
             
@@ -384,19 +383,21 @@ public class GameManager : MonoBehaviour
 	{
         playerWin = true;
 
-		correctText.gameObject.SetActive(true);
-        answerjawiSVG.SetActive(true);
+//		correctText.gameObject.SetActive(true);
+//        answerjawiSVG.SetActive(true);
 
 
-        answerjawiSVG.GetComponent<SVGImage>().vectorGraphics = answerLib.setQuestion[questionId - 1].answerSVG;
+//        answerjawiSVG.GetComponent<SVGImage>().vectorGraphics = answerLib.setQuestion[questionId - 1].answerSVG;
 
-        guiManager.LevelComplete();
-              
+//        guiManager.LevelComplete();
+       
 		yield return new WaitForSeconds(2f);
 
-		correctText.gameObject.SetActive(false);
-        answerjawiSVG.SetActive(false);
+//		correctText.gameObject.SetActive(false);
+//        answerjawiSVG.SetActive(false);
 		//UpdateQuestion();
+        guiManager.Win();
+
 	}
 	
     public void LetterClick2(GameObject go)
@@ -697,6 +698,8 @@ public class GameManager : MonoBehaviour
         Debug.Log("player pref : " + PlayerPrefs.GetInt("Question ID"));
 
         guiManager.completeLevelParent.SetActive(false);
+        guiManager.panelWin.SetActive(false);
+        //guiManager.panelGameplay.SetActive(true);
 
         if (SaveManager.questionID <= totalQuestion)
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);

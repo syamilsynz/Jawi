@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4301384
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: background_hitam_hint
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 282
+    topology: 0
+    firstVertex: 0
+    vertexCount: 98
+    localAABB:
+      m_Center: {x: 0, y: -0.000000059604645, z: -0}
+      m_Extent: {x: 0.83596, y: 1.2003751, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 0000010002000000030001000400030000000500030004000600030005000700030006000800030007000900030008000a00030009000b0003000a000b000c0003000b000d000c000b000e000d000b000f000e000b0010000f000b00110010000b00120011000b0013001200140013000b001500130014001500160013001600150017001a001b001800180019001a001c001b001a001d001e001b001b001c001d001f001e001d00200021001e001e001f00200022002100200023002400210021002200230025002400230026002700240024002500260028002700260029002a0027002700280029002b002a0029002c002d002a002a002b002c002e002d002c002f0030002d002d002e002f00310030002f003200330030003000310032003400330032003500360033003300340035003700360035003800390036003600370038003a00390038003b003c00390039003a003b003d003c003b003e003f003c003c003d003e0040003f003e00410042003f003f00400041004300420041004400450042004200430044004600450044004700480045004500460047004900480047004a004b004800480049004a004c004b004a004d004e004b004b004c004d004f004e004d00500051004e004e004f00500052005100500053005400510051005200530055005400530056005700540054005500560058005700560059005a0057005700580059005b005a0059005c005d005a005a005b005c005e005d005c005f0060005d005d005e005f00610060005f00
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 5
+    m_VertexCount: 98
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1568
+    _typelessdata: ef3d443fb47196bf00000080242529ffd1f7533fac048dbf00000080242529ff55574e3f4a6392bf00000080242529ffcbb9543fb6fd89bf00000080242529ffffde363f10b498bf00000080242529fff5542f3f0e0299bf00000080242529ffdfbe2ebf0e0299bf00000080242529ff994736bf10b498bf00000080242529ffe3a543bf627196bf00000080242529fff0bf4dbff66292bf00000080242529ff6b6053bfac048dbf00000080242529ff0f2354bfb6fd89bf00000080242529ff6b22543f0dfd893f00000080242529ff6d60533f03048d3f00000080242529fff1bf4d3ff562923f00000080242529ff8ba6433f6071963f00000080242529ff9b47363f0fb4983f00000080242529ff91bd2e3f0c02993f00000080242529fff3542fbf0c02993f00000080242529fffcde36bf0fb4983f00000080242529ffcbb954bf0dfd893f00000080242529ffcef753bf03048d3f00000080242529ffee3d44bf6071963f00000080242529ff53574ebff562923f00000080242529ff9b47363f0fb4983f00000080242529ff91b0363f444f993f0000008024252900810f443f960c973f00000080242529008ba6433f6071963f00000080242529ffc373443f1cf1963f00000080242529002b8d4e3fb1e2923f0000008024252900f1bf4d3ff562923f00000080242529ff35e24e3ffcae923f0000008024252900af82543f0a508d3f00000080242529006d60533f03048d3f00000080242529ff91a5543f5c188d3f00000080242529008d67553f66118a3f00000080242529006b22543f0dfd893f00000080242529ff196a553f3afd893f00000080242529007901563f88fd89bf0000008024252900cbb9543fb6fd89bf00000080242529ffeffe553f10128abf0000008024252900f53c553f06198dbf0000008024252900d1f7533fac048dbf00000080242529ff131a553fb6508dbf000000802425290099794f3f54af92bf000000802425290055574e3f4a6392bf00000080242529ff8d244f3f06e392bf0000008024252900270b453f70f196bf0000008024252900ef3d443fb47196bf00000080242529ffd5a6443fee0c97bf0000008024252900e547373f484f99bf0000008024252900ffde363f10b498bf00000080242529ff65f9363f605799bf00000080242529005b6f2f3f5ca599bf0000008024252900f5542f3f0e0299bf00000080242529fff5542f3fe4a599bf0000008024252900dfbe2ebfe4a599bf0000008024252900dfbe2ebf0e0299bf00000080242529ff49d92ebf5ca599bf0000008024252900036236bf605799bf0000008024252900994736bf10b498bf00000080242529ff92b036bf424f99bf0000008024252900dd0e44bf940c97bf0000008024252900e3a543bf627196bf00000080242529ff117344bf20f196bf00000080242529001e8d4ebfb4e292bf0000008024252900f0bf4dbff66292bf00000080242529ff2ce24ebf02af92bf0000008024252900a88254bfb8508dbf00000080242529006b6053bfac048dbf00000080242529ff8ba554bf14198dbf0000008024252900306855bf20128abf00000080242529000f2354bfb6fd89bf00000080242529ffbd6a55bfe2fd89bf0000008024252900790156bfe0fc893f0000008024252900cbb954bf0dfd893f00000080242529fff0fe55bf66118a3f0000008024252900f33c55bf5c188d3f0000008024252900cef753bf03048d3f00000080242529ff131a55bf0a508d3f000000802425290097794fbffcae923f000000802425290053574ebff562923f00000080242529ff8a244fbfb1e2923f0000008024252900250b45bf1cf1963f0000008024252900ee3d44bf6071963f00000080242529ffe3a644bf960c973f0000008024252900f14737bf444f993f0000008024252900fcde36bf0fb4983f00000080242529ff61f936bf5e57993f0000008024252900586f2fbf5ba5993f0000008024252900f3542fbf0c02993f00000080242529fff3542fbfe3a5993f000000802425290091bd2e3fe3a5993f000000802425290091bd2e3f0c02993f00000080242529fff7d72e3f5ba5993f00000080242529000162363f5e57993f00000080242529009b47363f0fb4983f00000080242529ff91b0363f444f993f0000008024252900
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: -0.000000059604645, z: -0}
+    m_Extent: {x: 0.83596, y: 1.2003751, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: background_hitam_hint
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635924866178883530
+  _documentAsset: {fileID: 11403198}
+  _sharedMesh: {fileID: 4301384}
+  _antialiasing: 1
+  _antialiasingWidth: 0.5
+  _generateCollider: 0
+  _keepSVGFile: 0
+  _ignoreSVGCanvas: 1
+  _colliderShape: []
+  _format: 2
+  _useGradients: 1
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 0.5}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients: []
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1.6619298
+    height: 2.39076
+  _layers: []
+--- !u!114 &11403198
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: 
+  _title: 
+  _description: 
