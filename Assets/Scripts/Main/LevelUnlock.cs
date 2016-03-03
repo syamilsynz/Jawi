@@ -7,22 +7,32 @@ using UnityEngine.EventSystems;
 public class LevelUnlock : MonoBehaviour 
 {
     public string levelId;
-//    public RuntimeAnimatorController anim;
+    public string type;             // Type of gameobject to be unlock (flash/level)
 
 	// Use this for initialization
 	void Start () 
     {
         PlayerPrefs.SetString("1","1");
 
-        this.transform.FindChild("Text").gameObject.GetComponent<Text>().text = levelId.ToString();
-
-        CheckLevelUnlock(levelId);
-
+        if (type == "flash")
+        {
+            CheckFlashLevelUnlock(levelId);
+        }
+        else if (type == "level")
+        {
+            CheckLevelUnlock(levelId);
+        }
+        else
+        {
+            CheckLevelUnlock(levelId);
+        }
 
 	}
 	
     public void CheckLevelUnlock(string levelId)
     {
+        this.transform.FindChild("Text").gameObject.GetComponent<Text>().text = levelId.ToString();
+
         if (PlayerPrefs.HasKey(levelId))
         {
             this.GetComponent<Button>().interactable = true;
@@ -49,6 +59,29 @@ public class LevelUnlock : MonoBehaviour
             this.GetComponent<Animator>().enabled = false;
         }
     }
+
+    public void CheckFlashLevelUnlock(string levelId)
+    {
+        if (PlayerPrefs.HasKey(levelId))
+        {
+            this.GetComponent<Button>().interactable = true;
+
+            // Change the color of the button
+            this.transform.FindChild("ImageUnlock").gameObject.SetActive(true);
+            this.transform.FindChild("ImageLock").gameObject.SetActive(false);
+
+        }
+        else
+        {
+            this.GetComponent<Button>().interactable = false;
+
+            // Change the color of the button
+            this.transform.FindChild("ImageUnlock").gameObject.SetActive(false);
+            this.transform.FindChild("ImageLock").gameObject.SetActive(true);
+
+        }
+    }
+        
 
 
         

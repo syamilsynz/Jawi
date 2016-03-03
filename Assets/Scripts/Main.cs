@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Main : MonoBehaviour 
 {
+    public Text playerCoin;
 
 	// Use this for initialization
 	void Start () 
@@ -15,7 +17,7 @@ public class Main : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-	
+        playerCoin.text = "Anda ada " + SaveManager.coinAmount.ToString();
 	}
 
     public void GoToScene(string name)

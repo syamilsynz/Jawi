@@ -42,11 +42,12 @@ public class GameManager : MonoBehaviour
 	private float offsetX1 = 0;                     // X Offset for row 1
 	private float offsetX2 = 0;                     // X offset for row 2
 
-    public float offsetBoxY = 0;
+    public float offsetBoxY = 0;                    // Y offset for second targetbox
 
 	// Input checking
 	private bool touching = false;
 	private float moveSpeed = 16f;
+    [HideInInspector]
 	public static bool isCurrentlyMoving = false;
 	
     private JawiManager jawiManager;
@@ -57,10 +58,13 @@ public class GameManager : MonoBehaviour
 
     private bool playerWin = false;
 
-    public Button btnOpenOneLetter;
-
     private GUIManager guiManager;
     public GameObject canvasScript;
+
+    [Space(5)] [Header("Hint Price")] [Space(5)] 
+    public int hintPriceOpenOneLetter;
+    public int hintPriceRemoveLetter;
+    public int hintPriceSolveQuestion;
 
     public void ClearPlayerAnswer(int index)
     { 
@@ -126,11 +130,15 @@ public class GameManager : MonoBehaviour
         if (System.Array.Exists(playerAnswer, element => element == null) 
             ||  System.Array.Exists(playerAnswer, element => element == string.Empty))
         {
-            btnOpenOneLetter.interactable = true;
+//            btnOpenOneLetter.interactable = true;
+            guiManager.btnOpenOneLetter.interactable = true;
+            guiManager.btnOpenOneLetterWatchAd.interactable = true;
         }
         else
         {
-            btnOpenOneLetter.interactable = false;
+            guiManager.btnOpenOneLetter.interactable = false;
+            guiManager.btnOpenOneLetterWatchAd.interactable = false;
+//            btnOpenOneLetter.interactable = false;
         }
 	}
 	
@@ -276,9 +284,6 @@ public class GameManager : MonoBehaviour
             targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.SetActive(true);
             offsetX1 = offsetX1 - targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition.x;
 
-//            targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.transform.FindChild("Text").GetComponent<Text>().text = string.Empty;
-//            targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.transform.FindChild("TextHint").GetComponent<Text>().text = string.Empty;
-
         }
 
         // set active related box/letter for row 2
@@ -287,9 +292,6 @@ public class GameManager : MonoBehaviour
 //            Debug.Log("length 2 = " +  answerLib.jawi[questionId - 1].answerLength2 );
             targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.SetActive(true);
             offsetX2 = offsetX2 - targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.GetComponent<RectTransform>().localPosition.x;
-
-//            targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.transform.FindChild("Text").GetComponent<Text>().text = string.Empty;
-//            targetParent.transform.FindChild("targetBox"+(i + 1)).gameObject.transform.FindChild("TextHint").GetComponent<Text>().text = string.Empty;
 
         }
 
@@ -342,6 +344,7 @@ public class GameManager : MonoBehaviour
 
         StartCoroutine(ResetLetters());
 
+        // Reset color targetbox
         guiManager.targetBoxMaterial.color = new Color32(65, 65, 65, 255);
 
 		yield return 0;
@@ -709,8 +712,8 @@ public class GameManager : MonoBehaviour
             // Unlock Next Level
             PlayerPrefs.SetInt((PlayerPrefs.GetInt("Level ID") + 1).ToString(), (PlayerPrefs.GetInt("Level ID") + 1));
             // Pop Up level Complete Panel
-
-            SceneManager.LoadScene("main");
+            guiManager.completeLevelParent.SetActive(true);
+//            SceneManager.LoadScene("main");
         }
 
 	}
@@ -737,12 +740,15 @@ public class GameManager : MonoBehaviour
 	
 	public void RemoveUnwantedLetters()
 	{
-        if (SaveManager.coinAmount >= 50)
+        if (SaveManager.coinAmount >= hintPriceRemoveLetter)
         {
             // Reduce Coin
-            SaveManager.coinAmount = SaveManager.coinAmount - 50;
+            SaveManager.coinAmount = SaveManager.coinAmount - hintPriceRemoveLetter;
             SaveManager.SaveData();
             guiManager.UpdateCoinInformation();
+
+            // Hide Buy Hint Panel
+            guiManager.panelBuyHint.SetActive(false);
 
     		for (int i = 0; i < totalBoxInSourceBox; i++)
     		{
@@ -772,6 +778,7 @@ public class GameManager : MonoBehaviour
         else
         {
             // Prompt player to buy coin or cancel
+            guiManager.panelBuyCoin.SetActive(true);
         }
 
             
@@ -913,29 +920,37 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        if (SaveManager.coinAmount >= 10)
+        if (SaveManager.coinAmount >= hintPriceOpenOneLetter)
         {
             // Reduce Coin
-            SaveManager.coinAmount = SaveManager.coinAmount - 10;
+            SaveManager.coinAmount = SaveManager.coinAmount - hintPriceOpenOneLetter;
             SaveManager.SaveData();
             guiManager.UpdateCoinInformation();
+
+            // Hide Buy Hint Panel
+            guiManager.panelBuyHint.SetActive(false);
 
 		    StartCoroutine(OpenRandomLetter());
         }
         else
         {
             // Prompt player to buy coin or cancel
+            guiManager.panelBuyCoin.SetActive(true);
         }
 	}
 
     public void SolveQuestion()
     {
-        if (SaveManager.coinAmount >= 100)
+        if (SaveManager.coinAmount >= hintPriceSolveQuestion)
         {
             // Reduce Coin
-            SaveManager.coinAmount = SaveManager.coinAmount - 100;
+            SaveManager.coinAmount = SaveManager.coinAmount - hintPriceSolveQuestion;
             SaveManager.SaveData();
             guiManager.UpdateCoinInformation();
+
+            // Hide Buy Hint Panel
+            guiManager.panelBuyHint.SetActive(false);
+
             // Solve the question
             ResetAllLetter();
             StartCoroutine(SolveQuestionIEnumerator());
@@ -943,6 +958,7 @@ public class GameManager : MonoBehaviour
         else
         {
             // Prompt player to buy coin or cancel
+            guiManager.panelBuyCoin.SetActive(true);
         }
     }
 
