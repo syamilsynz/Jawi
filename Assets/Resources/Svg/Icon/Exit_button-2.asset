@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4380002
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Exit_button-2
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 282
+    topology: 0
+    firstVertex: 0
+    vertexCount: 98
+    localAABB:
+      m_Center: {x: 0, y: 0, z: -0}
+      m_Extent: {x: 0.80065507, y: 0.15463501, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 00000100020000000300010004000300000004000500030004000600050004000700060004000800070004000900080004000a00090004000b000a000c000b0004000d000b000c000e000b000d000f000b000e0010000b000f0011000b00100012000b001100120013000b001400130012001400150013001600150014001500160017001a001b001800180019001a001c001b001a001d001e001b001b001c001d001f001e001d00200021001e001e001f00200022002100200023002400210021002200230025002400230026002700240024002500260028002700260029002a0027002700280029002b002a0029002c002d002a002a002b002c002e002d002c002f0030002d002d002e002f00310030002f003200330030003000310032003400330032003500360033003300340035003700360035003800390036003600370038003a00390038003b003c00390039003a003b003d003c003b003e003f003c003c003d003e0040003f003e00410042003f003f00400041004300420041004400450042004200430044004600450044004700480045004500460047004900480047004a004b004800480049004a004c004b004a004d004e004b004b004c004d004f004e004d00500051004e004e004f00500052005100500053005400510051005200530055005400530056005700540054005500560058005700560059005a0057005700580059005b005a0059005c005d005a005a005b005c005e005d005c005f0060005d005d005e005f00610060005f00
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 5
+    m_VertexCount: 98
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1568
+    _typelessdata: ff39383fd23a1abe00000080343538ffc71f483f64dadebd00000080343538ffa948413f24e90abe00000080343538ff9fef4b3fb01b96bd00000080343538ff351f333f5a4c1cbe00000080343538ff57734c3fe4365abd00000080343538ffa5744c3f60415a3d00000080343538ff45f04b3f2e26963d00000080343538ff7120483f22eade3d00000080343538ff5149413f64ee0a3e00000080343538ffa53a383f713d1a3e00000080343538ff8520333f5a4c1c3e00000080343538ffd72133bf5a4c1cbe00000080343538fff93b38bf32381abe00000080343538fffb4941bf24e90abe00000080343538ffc22148bfa4dfdebd00000080343538ffeff04bbfb01b96bd00000080343538ffa9744cbfe4365abd00000080343538ffa9744cbf60415a3d00000080343538ffd72133bf5a4c1c3e00000080343538ffeff04bbf2e26963d00000080343538fff93b38bf713d1a3e00000080343538ffc22148bfe4e4de3d00000080343538fffb4941bf64ee0a3e00000080343538ffa53a383f713d1a3e00000080343538ffab6d383f62201c3e0000008034353800577c413f55d10c3e00000080343538005149413f64ee0a3e00000080343538ff33a6413f5b600c3e0000008034353800517d483f10cee13d00000080343538007120483f22eade3d00000080343538ff5199483f6c7fe03d000000803435380025694c3f78bb973d000000803435380045f04b3f2e26963d00000080343538ffb1724c3f648f963d000000803435380011f74c3fcc135b3d0000008034353800a5744c3f60415a3d00000080343538ffbbf74c3ffa405a3d00000080343538006bf64c3f48375abd000000803435380057734c3fe4365abd00000080343538ffc1f54c3f60085bbd000000803435380009724c3f6c8496bd00000080343538009fef4b3fb01b96bd00000080343538ff7f684c3f10b197bd0000008034353800a998483fc86fe0bd0000008034353800c71f483f64dadebd00000080343538ffa97c483f30bee1bd000000803435380089a5413f0a5b0cbe0000008034353800a948413f24e90abe00000080343538ffb37b413f08cc0cbe0000008034353800096d383fb41d1cbe0000008034353800ff39383fd23a1abe00000080343538ff3747383f70441cbe00000080343538006d2c333ff8551ebe0000008034353800351f333f5a4c1cbe00000080343538ff351f333fa4581ebe0000008034353800d72133bfa4581ebe0000008034353800d72133bf5a4c1cbe00000080343538ff1f2f33bff2551ebe0000008034353800414938bfca411cbe0000008034353800f93b38bf32381abe00000080343538ff006f38bf1e1b1cbe0000008034353800037d41bf10cc0cbe0000008034353800fb4941bf24e90abe00000080343538ffd6a641bf2c5b0cbe00000080343538009d7e48bfb4c3e1bd0000008034353800c22148bfa4dfdebd00000080343538ffa89a48bfb474e0bd0000008034353800d5694cbfbeb097bd0000008034353800eff04bbfb01b96bd00000080343538ff59734cbf728496bd000000803435380014f74cbf68085bbd0000008034353800a9744cbfe4365abd00000080343538ffbbf74cbfe4365abd0000008034353800bbf74cbf60415a3d0000008034353800a9744cbf60415a3d00000080343538ff14f74cbfc8125b3d00000080343538005a734cbfe18e963d0000008034353800eff04bbf2e26963d00000080343538ffd3694cbf56bb973d0000008034353800a69a48bf0b7ae03d0000008034353800c22148bfe4e4de3d00000080343538ffa17e48bfd2c8e13d0000008034353800daa641bf5b600c3e0000008034353800fb4941bf64ee0a3e00000080343538ff037d41bf50d10c3e0000008034353800006f38bf5d201c3e0000008034353800f93b38bf713d1a3e00000080343538ff204938bf15471c3e0000008034353800fe2e33bffe551e3e0000008034353800d72133bf5a4c1c3e00000080343538ffd72133bfa4581e3e00000080343538008520333fa4581e3e00000080343538008520333f5a4c1c3e00000080343538ffad2d333ffe551e3e0000008034353800cf47383f15471c3e0000008034353800a53a383f713d1a3e00000080343538ffab6d383f62201c3e0000008034353800
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: -0}
+    m_Extent: {x: 0.80065507, y: 0.15463501, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: Exit_button-2
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635924853303863250
+  _documentAsset: {fileID: 11421444}
+  _sharedMesh: {fileID: 4380002}
+  _antialiasing: 1
+  _antialiasingWidth: 0.2
+  _generateCollider: 0
+  _keepSVGFile: 0
+  _ignoreSVGCanvas: 1
+  _colliderShape: []
+  _format: 2
+  _useGradients: 1
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 0.5}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients: []
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1.5972999
+    height: 0.30525
+  _layers: []
+--- !u!114 &11421444
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: 
+  _title: 
+  _description: 
