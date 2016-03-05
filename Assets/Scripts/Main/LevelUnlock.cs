@@ -7,26 +7,13 @@ using UnityEngine.EventSystems;
 public class LevelUnlock : MonoBehaviour 
 {
     public string levelId;
-    public string type;             // Type of gameobject to be unlock (flash/level)
 
 	// Use this for initialization
 	void Start () 
     {
         PlayerPrefs.SetString("1","1");
 
-        if (type == "flash")
-        {
-            CheckFlashLevelUnlock(levelId);
-        }
-        else if (type == "level")
-        {
-            CheckLevelUnlock(levelId);
-        }
-        else
-        {
-            CheckLevelUnlock(levelId);
-        }
-
+        CheckLevelUnlock(levelId);
 	}
 	
     public void CheckLevelUnlock(string levelId)
@@ -59,28 +46,7 @@ public class LevelUnlock : MonoBehaviour
             this.GetComponent<Animator>().enabled = false;
         }
     }
-
-    public void CheckFlashLevelUnlock(string levelId)
-    {
-        if (PlayerPrefs.HasKey(levelId))
-        {
-            this.GetComponent<Button>().interactable = true;
-
-            // Change the color of the button
-            this.transform.FindChild("ImageUnlock").gameObject.SetActive(true);
-            this.transform.FindChild("ImageLock").gameObject.SetActive(false);
-
-        }
-        else
-        {
-            this.GetComponent<Button>().interactable = false;
-
-            // Change the color of the button
-            this.transform.FindChild("ImageUnlock").gameObject.SetActive(false);
-            this.transform.FindChild("ImageLock").gameObject.SetActive(true);
-
-        }
-    }
+        
         
 
 

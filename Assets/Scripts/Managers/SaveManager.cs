@@ -9,6 +9,7 @@ public class SaveManager : MonoBehaviour
     public static int questionID = 1;       // question id for current category
     public static string levelName;
     public static int levelId;
+    public static int timerHighScore;
 
     public void SetQuestionCategory(int id)
     {
@@ -48,6 +49,7 @@ public class SaveManager : MonoBehaviour
             questionID = PlayerPrefs.GetInt("Question ID");
             levelName = PlayerPrefs.GetString("Level Name");
             levelId = PlayerPrefs.GetInt("Level ID");
+            timerHighScore = PlayerPrefs.GetInt("Timer High Score");
         }
 
         PlayerPrefs.Save();
@@ -62,6 +64,7 @@ public class SaveManager : MonoBehaviour
         PlayerPrefs.SetInt("Question ID", questionID);
         PlayerPrefs.SetString("Level Name", levelName);
         PlayerPrefs.SetInt("Level ID", levelId);
+        PlayerPrefs.SetInt("Timer High Score", timerHighScore);
 
         PlayerPrefs.Save();
     }

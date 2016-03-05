@@ -13,3 +13,5 @@ EditorBuildSettings:
     path: Assets/Scenes/jawi.unity
   - enabled: 1
     path: Assets/Scenes/flashcard.unity
+  - enabled: 1
+    path: Assets/Scenes/timer.unity

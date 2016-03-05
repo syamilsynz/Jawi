@@ -96,6 +96,10 @@ public class AnswerLibrary : MonoBehaviour
             case "ibadah": // ibadah
                 level = questionLib.ibadah;
                 break;
+            
+            case "timer":
+                level = questionLib.timer;
+                break;
 
             default:
                 level = questionLib.animal1;
