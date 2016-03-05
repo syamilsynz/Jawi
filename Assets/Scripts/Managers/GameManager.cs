@@ -61,6 +61,8 @@ public class GameManager : MonoBehaviour
     private GUIManager guiManager;
     public GameObject canvasScript;
 
+    public int coinReceive;                     // Coin receive when complete the level/timer
+
     [Space(5)] [Header("Hint Price")] [Space(5)] 
     public int hintPriceOpenOneLetter;
     public int hintPriceRemoveLetter;
@@ -114,7 +116,18 @@ public class GameManager : MonoBehaviour
         guiManager = canvasScript.GetComponent<GUIManager>();
               
         SaveManager.LoadData();
-        guiManager.UpdateCoinInformation();
+
+        // Apply Timer Mode 
+        if (SceneManager.GetActiveScene().name == "timer")
+        {
+            Timer.seconds = timerSecond;
+            Timer.maxSecond = Timer.seconds;
+
+            timerSlider.maxValue = Timer.maxSecond;
+            timerSlider.value = Timer.seconds;
+            timerText.text = Timer.GetTimerStr();
+            InvokeRepeating("UpdateTimer", 1.0f, timerDecreament);
+        }
 
 		InitLevel();
 
@@ -140,6 +153,8 @@ public class GameManager : MonoBehaviour
             guiManager.btnOpenOneLetterWatchAd.interactable = false;
 //            btnOpenOneLetter.interactable = false;
         }
+
+        guiManager.UpdateCoinInformation();
 	}
 	
 	void InitLevel()
@@ -159,7 +174,7 @@ public class GameManager : MonoBehaviour
 	    	
         questionStr = answerLib.setQuestion[questionId - 1].question;
 		questionText.text = questionStr;
-		questionRatioText.text = "Question : " + questionId + " / " + totalQuestion;
+		questionRatioText.text = "Soalan : " + questionId + " / " + totalQuestion;
 //		Debug.Log(questionStr);
 		
         // Fill in lettercollection with all answer letter
@@ -367,18 +382,33 @@ public class GameManager : MonoBehaviour
         if (Enumerable.SequenceEqual(playerAnswer, answerLib.setQuestion[questionId - 1].answerJawi))
         {
             guiManager.targetBoxMaterial.color = new Color32(39, 174, 96, 255);
-            StartCoroutine( CorrectAnswer());
 
-            SaveManager.coinAmount = SaveManager.coinAmount + 10;
-            SaveManager.SaveData();
+            if (SceneManager.GetActiveScene().name == "timer")
+            {
+                // Timer Mode
+                StartCoroutine( CorrectAnswerTimerMode());
 
-            guiManager.coinText.text = "x " + SaveManager.coinAmount.ToString();
+                // Scoring
+                scoreTimer = scoreTimer + answerLib.setQuestion[questionId - 1].answerLength;
+                scoreTimerText.text = "Markah : " + scoreTimer.ToString();
+
+
+            }
+            else
+            {
+                // Normal Mode
+                StartCoroutine( CorrectAnswer());
+
+            }
         }
         else
         {
             guiManager.targetBoxMaterial.color = new Color32(231, 76, 60, 255);
             Debug.Log("U get wrong answer");
         }
+
+       
+
 
 	}
         
@@ -402,6 +432,17 @@ public class GameManager : MonoBehaviour
         guiManager.Win();
 
 	}
+
+    IEnumerator CorrectAnswerTimerMode()
+    {
+        // Timer Mode
+        Timer.IncreaseTimeRemaining(answerLib.setQuestion[questionId - 1].answerLength);
+        timerSlider.value = Timer.seconds;
+
+        yield return new WaitForSeconds(0.5f);
+
+        UpdateTimerQuestion();
+    }
 	
     public void LetterClick2(GameObject go)
     {
@@ -603,7 +644,7 @@ public class GameManager : MonoBehaviour
 	IEnumerator ResetLetters()
 	{       
 		isCurrentlyMoving = true;
-		
+        letterParent.SetActive(false);
 		for(int i = 0; i < totalBoxInSourceBox; i++)
 		{
             Vector3 startPosition = letterParent.transform.FindChild("letter" + (i + 1)).GetComponent<RectTransform>().localPosition;
@@ -651,6 +692,7 @@ public class GameManager : MonoBehaviour
 		}
 		
 		isCurrentlyMoving = false;
+        letterParent.SetActive(true);
 		yield return 0;
 	}
 	
@@ -696,9 +738,10 @@ public class GameManager : MonoBehaviour
 	}
 	public void UpdateQuestion()
 	{
+
         SaveManager.questionID++;
         SaveManager.SaveData();
-        Debug.Log("player pref : " + PlayerPrefs.GetInt("Question ID"));
+        Debug.Log("question ID playrepref " + PlayerPrefs.GetInt("Question ID"));
 
         guiManager.completeLevelParent.SetActive(false);
         guiManager.panelWin.SetActive(false);
@@ -711,8 +754,15 @@ public class GameManager : MonoBehaviour
             // level complete
             // Unlock Next Level
             PlayerPrefs.SetInt((PlayerPrefs.GetInt("Level ID") + 1).ToString(), (PlayerPrefs.GetInt("Level ID") + 1));
+
+            coinReceive = answerLib.setQuestion.Length * 5;
+
+            SaveManager.coinAmount = SaveManager.coinAmount + coinReceive;
+            SaveManager.SaveData();
+
             // Pop Up level Complete Panel
-            guiManager.completeLevelParent.SetActive(true);
+            guiManager.LevelComplete();
+//            guiManager.completeLevelParent.SetActive(true);
 //            SceneManager.LoadScene("main");
         }
 
@@ -745,7 +795,6 @@ public class GameManager : MonoBehaviour
             // Reduce Coin
             SaveManager.coinAmount = SaveManager.coinAmount - hintPriceRemoveLetter;
             SaveManager.SaveData();
-            guiManager.UpdateCoinInformation();
 
             // Hide Buy Hint Panel
             guiManager.panelBuyHint.SetActive(false);
@@ -925,7 +974,6 @@ public class GameManager : MonoBehaviour
             // Reduce Coin
             SaveManager.coinAmount = SaveManager.coinAmount - hintPriceOpenOneLetter;
             SaveManager.SaveData();
-            guiManager.UpdateCoinInformation();
 
             // Hide Buy Hint Panel
             guiManager.panelBuyHint.SetActive(false);
@@ -946,7 +994,6 @@ public class GameManager : MonoBehaviour
             // Reduce Coin
             SaveManager.coinAmount = SaveManager.coinAmount - hintPriceSolveQuestion;
             SaveManager.SaveData();
-            guiManager.UpdateCoinInformation();
 
             // Hide Buy Hint Panel
             guiManager.panelBuyHint.SetActive(false);
@@ -979,5 +1026,69 @@ public class GameManager : MonoBehaviour
             SolveQuestionOpenOneLetter();
         }
     }
+
+    //-------------------
+    // TIMER MODE REGION
+    //-------------------
+    [Space(5)] [Header("Timer Mode")] [Space(5)] 
+    public Text timerText;
+    public int timerSecond;
+    public Slider timerSlider;
+    public float timerIncreament;
+    public float timerDecreament;
+    public Text scoreTimerText;
+    public int scoreTimer;
 				
+    public void UpdateTimerQuestion()
+    {
+        SaveManager.questionID++;
+        SaveManager.SaveData();
+        Debug.Log("player pref : " + PlayerPrefs.GetInt("Question ID"));
+
+        ResetLetters();
+        InitLevel();
+
+    }
+
+    public void UpdateTimer()
+    {
+        float seconds = Timer.GetSeconds();
+        if (seconds >= 0)
+        {
+            timerText.text = Timer.GetTimerStr();
+            Timer.DecreaseTimeRemaining(timerDecreament);
+
+            timerSlider.value = seconds;
+        }
+        else
+        {
+            timerSlider.value = 0;
+            GameOver();
+           
+            CancelInvoke("UpdateTimer");
+        }
+    }
+
+    public void GameOver()
+    {
+        // Check high score
+        if (scoreTimer > SaveManager.timerHighScore)
+        {
+            // New High Score
+            SaveManager.timerHighScore = scoreTimer;
+            SaveManager.SaveData();
+
+
+        }
+
+        coinReceive = scoreTimer/2;
+        SaveManager.coinAmount = SaveManager.coinAmount + coinReceive;
+        SaveManager.SaveData();
+
+        guiManager.TimerLevelComplete();
+        Debug.Log("GAME OVER");
+
+    }
+
+
 }

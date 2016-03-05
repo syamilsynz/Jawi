@@ -94,4 +94,22 @@ public class FeatureUnlock : MonoBehaviour
 
     }
 
+    public void UnlockFeatureIAP()
+    {
+        if (PlayerPrefs.HasKey(levelId) && PlayerPrefs.HasKey(featureId))
+        {
+            //            PlayerPrefs.DeleteKey(featureId.ToString());
+            // Load scene this feature
+            SceneManager.LoadScene(sceneName);
+
+        }
+        else
+        {
+            // Unlock this feature if payment successfull
+            PlayerPrefs.SetString(featureId.ToString(), featureId.ToString());
+
+            CheckFeatureUnlock(levelId);
+        }
+    }
+
 }
