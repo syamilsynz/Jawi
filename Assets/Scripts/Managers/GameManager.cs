@@ -68,6 +68,11 @@ public class GameManager : MonoBehaviour
     public int hintPriceRemoveLetter;
     public int hintPriceSolveQuestion;
 
+    [Space(5)] [Header("Audio")] [Space(5)] 
+    public AudioClip letterClickSFX;    
+    public AudioClip correctSFX;    
+    public AudioClip wrongSFX;    
+    private AudioSource musicSource;    
     public void ClearPlayerAnswer(int index)
     { 
 //        Debug.Log("ClearJawiAnswer at " + index);
@@ -114,6 +119,9 @@ public class GameManager : MonoBehaviour
 		questionLib = questionGameObject.GetComponent<QuestionLibrary>();
         jawiManager = globalScript.GetComponent<JawiManager>();
         guiManager = canvasScript.GetComponent<GUIManager>();
+
+        //Get a component reference to the AudioSource attached to the UI game object
+        musicSource = GetComponent<AudioSource> ();
               
         SaveManager.LoadData();
 
@@ -403,6 +411,8 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            musicSource.clip = wrongSFX;
+            musicSource.Play();
             guiManager.targetBoxMaterial.color = new Color32(231, 76, 60, 255);
             Debug.Log("U get wrong answer");
         }
@@ -415,6 +425,8 @@ public class GameManager : MonoBehaviour
 	IEnumerator CorrectAnswer()
 	{
         playerWin = true;
+        musicSource.clip = correctSFX;
+        musicSource.Play();
 
 //		correctText.gameObject.SetActive(true);
 //        answerjawiSVG.SetActive(true);
@@ -467,6 +479,9 @@ public class GameManager : MonoBehaviour
             || startPosition.y == targetParent.transform.FindChild("targetBox"+1).GetComponent<RectTransform>().localPosition.y 
             || startPosition.y == targetParent.transform.FindChild("targetBox"+(totalBoxInRowOne + 1)).GetComponent<RectTransform>().localPosition.y)
         {
+            // Play click SFX
+            musicSource.clip = letterClickSFX;
+            musicSource.Play();
             //                    Debug.Log("Have null and string empty");
             StartCoroutine(MoveLetter (go.transform, letterId - 1));
 
