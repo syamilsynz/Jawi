@@ -1227,6 +1227,9 @@ MonoBehaviour:
   hintPriceOpenOneLetter: 25
   hintPriceRemoveLetter: 75
   hintPriceSolveQuestion: 100
+  letterClickSFX: {fileID: 8300000, guid: b06f3430e51cf408fafc4c1856e6f9c0, type: 3}
+  correctSFX: {fileID: 8300000, guid: 0be9130a09e7046e6ad4748017b9deec, type: 3}
+  wrongSFX: {fileID: 8300000, guid: c7d774f47b056420694f2ace15a373a0, type: 3}
   timerText: {fileID: 1652717086}
   timerSecond: 60
   timerSlider: {fileID: 549884820}

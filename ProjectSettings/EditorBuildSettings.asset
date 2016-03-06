@@ -12,6 +12,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/jawi.unity
   - enabled: 1
-    path: Assets/Scenes/flashcard.unity
+    path: Assets/Scenes/flash card/flashcard.unity
   - enabled: 1
     path: Assets/Scenes/timer.unity
+  - enabled: 1
+    path: Assets/Scenes/flash card/buah-buahan.unity

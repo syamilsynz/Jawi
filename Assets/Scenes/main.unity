@@ -8152,7 +8152,7 @@ MonoBehaviour:
   levelId: 7
   featureId: 1
   price: 0
-  sceneName: flashcard
+  sceneName: buah-buahan
   condition: {fileID: 2071544747}
   coinDependency: 0
   notification: need to unlock level 15
@@ -12046,52 +12046,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2128691053}
---- !u!1001 &2136217410
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 484394, guid: f056702b911d95146af3d8dd5c5326d1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 226.42282
-      objectReference: {fileID: 0}
-    - target: {fileID: 484394, guid: f056702b911d95146af3d8dd5c5326d1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 255.37144
-      objectReference: {fileID: 0}
-    - target: {fileID: 484394, guid: f056702b911d95146af3d8dd5c5326d1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 484394, guid: f056702b911d95146af3d8dd5c5326d1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 484394, guid: f056702b911d95146af3d8dd5c5326d1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 484394, guid: f056702b911d95146af3d8dd5c5326d1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 484394, guid: f056702b911d95146af3d8dd5c5326d1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 484394, guid: f056702b911d95146af3d8dd5c5326d1, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 101490, guid: f056702b911d95146af3d8dd5c5326d1, type: 2}
-      propertyPath: m_Name
-      value: PegangScript
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: f056702b911d95146af3d8dd5c5326d1, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &2141858154
 GameObject:
   m_ObjectHideFlags: 0
