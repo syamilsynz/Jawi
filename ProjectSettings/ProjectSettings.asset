@@ -10,7 +10,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Ingeniworks
-  productName: jawi
+  productName: Jawi
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_ShowUnitySplashScreen: 1
@@ -158,8 +158,8 @@ PlayerSettings:
   AndroidTargetDevice: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: /Users/syamil/MSD Digital Intelligence/Ingeniworks/Projects/Unity/ingeniworks.keystore
+  AndroidKeyaliasName: ingeniworks
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   androidEnableBanner: 1
