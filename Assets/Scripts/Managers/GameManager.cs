@@ -428,25 +428,17 @@ public class GameManager : MonoBehaviour
         musicSource.clip = correctSFX;
         musicSource.Play();
 
-//		correctText.gameObject.SetActive(true);
-//        answerjawiSVG.SetActive(true);
-
-
-//        answerjawiSVG.GetComponent<SVGImage>().vectorGraphics = answerLib.setQuestion[questionId - 1].answerSVG;
-
-//        guiManager.LevelComplete();
-       
 		yield return new WaitForSeconds(2f);
 
-//		correctText.gameObject.SetActive(false);
-//        answerjawiSVG.SetActive(false);
-		//UpdateQuestion();
         guiManager.Win();
 
 	}
 
     IEnumerator CorrectAnswerTimerMode()
     {
+        musicSource.clip = correctSFX;
+        musicSource.Play();
+
         // Timer Mode
         Timer.IncreaseTimeRemaining(answerLib.setQuestion[questionId - 1].answerLength);
         timerSlider.value = Timer.seconds;
