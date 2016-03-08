@@ -30,7 +30,7 @@ public class FlashCard : MonoBehaviour
             GameObject clone;
 //            clone = Instantiate(player, new Vector2(transform.position, transform.rotation) as GameObject;
 
-            clone = Instantiate(player, new Vector2(transform.position.x + (offsetX * i), transform.position.y), transform.rotation) as GameObject;
+            clone = Instantiate(player, new Vector2(transform.position.x + (offsetX * i), transform.position.y +  offsetY), transform.rotation) as GameObject;
             clone.transform.parent = this.gameObject.transform;    
             clone.GetComponent<SVGImage>().vectorGraphics = svgAsset[i];
             clone.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
@@ -129,7 +129,7 @@ public class FlashCard : MonoBehaviour
         // animate letter
         while (t < 1f) 
         {
-            t += Time.fixedDeltaTime * moveSpeed;
+            t += Time.smoothDeltaTime * moveSpeed;
             this.transform.GetComponent<RectTransform>().localPosition = Vector3.Lerp(startPosition, endPosition, t);
             yield return null;
         }

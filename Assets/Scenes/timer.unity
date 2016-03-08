@@ -1081,6 +1081,7 @@ GameObject:
   - 114: {fileID: 181010694}
   - 114: {fileID: 181010695}
   - 114: {fileID: 181010696}
+  - 82: {fileID: 181010697}
   m_Layer: 0
   m_Name: GlobalScript
   m_TagString: Untagged
@@ -1228,8 +1229,8 @@ MonoBehaviour:
   hintPriceRemoveLetter: 75
   hintPriceSolveQuestion: 100
   letterClickSFX: {fileID: 8300000, guid: b06f3430e51cf408fafc4c1856e6f9c0, type: 3}
-  correctSFX: {fileID: 8300000, guid: 0be9130a09e7046e6ad4748017b9deec, type: 3}
-  wrongSFX: {fileID: 8300000, guid: c7d774f47b056420694f2ace15a373a0, type: 3}
+  correctSFX: {fileID: 8300000, guid: c7d774f47b056420694f2ace15a373a0, type: 3}
+  wrongSFX: {fileID: 8300000, guid: 0be9130a09e7046e6ad4748017b9deec, type: 3}
   timerText: {fileID: 1652717086}
   timerSecond: 60
   timerSlider: {fileID: 549884820}
@@ -1259,6 +1260,80 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b26d698aa3f434ce28271a2cbbffcdd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &181010697
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 181010690}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &191893685
 GameObject:
   m_ObjectHideFlags: 0
@@ -2866,7 +2941,7 @@ GameObject:
   - 222: {fileID: 401034224}
   - 114: {fileID: 401034223}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TextPrice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7843,7 +7918,7 @@ GameObject:
   - 222: {fileID: 1238466418}
   - 114: {fileID: 1238466417}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TextPrice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8852,10 +8927,10 @@ RectTransform:
   - {fileID: 647036227}
   m_Father: {fileID: 1129183189}
   m_RootOrder: 4
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 169}
-  m_SizeDelta: {x: 300, y: 163}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 150}
+  m_SizeDelta: {x: 0, y: 163}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1442012989
 MonoBehaviour:
@@ -8869,14 +8944,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.25490198, g: 0.25490198, b: 0.25490198, a: 0.5882353}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  _vectorGraphics: {fileID: 11400000, guid: 64311a96532e84b76984aab11a28505b, type: 2}
+  _vectorGraphics: {fileID: 11400000, guid: c5ca33d962f3146548caaa8971d95e4a, type: 2}
   m_Type: 0
   m_PreserveAspect: 0
   m_UsePivot: 0
@@ -9197,7 +9272,7 @@ GameObject:
   - 222: {fileID: 1512585769}
   - 114: {fileID: 1512585768}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TextPrice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
