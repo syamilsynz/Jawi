@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b91a7deec5b9f48e785f526d406a9b0f, type: 3}
+  m_Name: UltimateMobileSettings
+  m_EditorClassIdentifier: 
+  ToolbarSelectedIndex: 2
+  IOSAdEdngine: 0
+  WP8AdEdngine: 0
+  IsInAppSettingsProductsOpen: 1
+  IsCameraAndGallerySettingsOpen: 1
+  IsCameraAndGalleryAndroidSettingsOpen: 0
+  IsCameraAndGalleryIOSSettingsOpen: 0
+  IsLP_Android_SettingsOpen: 0
+  IsLP_IOS_SettingsOpen: 0
+  TP_Android_SettingsOpen: 0
+  TP_IOS_SettingsOpen: 0
+  AutoLoadUsersSmallImages: 1
+  AutoLoadUsersBigImages: 0
+  AutoLoadLeaderboardsInfo: 1
+  AutoLoadAchievementsInfo: 1
+  Leaderboards:
+  - id: leaderboard_hall_of_fame
+    IsOpen: 1
+    IOSId: leaderboard_hall_of_fame
+    AndroidId: CgkIz5WtxKkDEAIQAA
+    _Description: Best Score for Hall of Fame
+    _Texture: {fileID: 0}
+  Achievements:
+  - IsOpen: 0
+    id: New Adventure
+    _Steps: 1
+    _Description: Adventure Start
+    _Texture: {fileID: 0}
+    IsIncremental: 0
+    IOSId: New Adventure
+    AndroidId: CgkIz5WtxKkDEAIQBA
+  - IsOpen: 0
+    id: Hall of Fame
+    _Steps: 1
+    _Description: 
+    _Texture: {fileID: 0}
+    IsIncremental: 0
+    IOSId: Hall of Fame
+    AndroidId: CgkIz5WtxKkDEAIQAg
+  - IsOpen: 0
+    id: Ultimate Flash Card
+    _Steps: 1
+    _Description: 
+    _Texture: {fileID: 0}
+    IsIncremental: 0
+    IOSId: Ultimate Flash Card
+    AndroidId: CgkIz5WtxKkDEAIQAw
+  - IsOpen: 0
+    id: Unlock All Flash Card
+    _Steps: 1
+    _Description: 
+    _Texture: {fileID: 0}
+    IsIncremental: 0
+    IOSId: Unlock All Flash Card
+    AndroidId: CgkIz5WtxKkDEAIQBQ
+  - IsOpen: 0
+    id: Landing Time
+    _Steps: 1
+    _Description: 
+    _Texture: {fileID: 0}
+    IsIncremental: 0
+    IOSId: Landing Time
+    AndroidId: CgkIz5WtxKkDEAIQBg
+  - IsOpen: 0
+    id: Knowledgeable
+    _Steps: 1
+    _Description: 
+    _Texture: {fileID: 0}
+    IsIncremental: 0
+    IOSId: Knowledgeable
+    AndroidId: CgkIz5WtxKkDEAIQBw
+  - IsOpen: 1
+    id: Harta Qarun
+    _Steps: 1
+    _Description: 
+    _Texture: {fileID: 0}
+    IsIncremental: 0
+    IOSId: Harta Qarun
+    AndroidId: CgkIz5WtxKkDEAIQCA
+  - IsOpen: 0
+    id: Awan Awangan
+    _Steps: 1
+    _Description: 
+    _Texture: {fileID: 0}
+    IsIncremental: 0
+    IOSId: Awan Awangan
+    AndroidId: CgkIz5WtxKkDEAIQCQ
+  - IsOpen: 0
+    id: Your First Exclusive Pouch
+    _Steps: 1
+    _Description: 
+    _Texture: {fileID: 0}
+    IsIncremental: 0
+    IOSId: Your First Exclusive Pouch
+    AndroidId: CgkIz5WtxKkDEAIQCg
+  - IsOpen: 0
+    id: Open One Letter
+    _Steps: 1
+    _Description: 
+    _Texture: {fileID: 0}
+    IsIncremental: 0
+    IOSId: Open One Letter
+    AndroidId: CgkIz5WtxKkDEAIQCw
+  - IsOpen: 0
+    id: Remove Unwanted Letter
+    _Steps: 1
+    _Description: 
+    _Texture: {fileID: 0}
+    IsIncremental: 0
+    IOSId: Remove Unwanted Letter
+    AndroidId: CgkIz5WtxKkDEAIQDA
+  - IsOpen: 0
+    id: Solve Question
+    _Steps: 1
+    _Description: 
+    _Texture: {fileID: 0}
+    IsIncremental: 0
+    IOSId: Solve Question
+    AndroidId: CgkIz5WtxKkDEAIQDQ
+  IsAchievementsOpen: 1
+  IsLeaderBoardsOpen: 0
+  InAppProducts:
+  - IsConsumable: 1
+    IsOpen: 1
+    id: Mini_Pouch
+    IOSId: sku_mini_pouch
+    AndroidId: sku_mini_pouch
+    WP8Id: 
+    _price: 0.90
+  - IsConsumable: 0
+    IsOpen: 1
+    id: Ultimate_Flash_Card
+    IOSId: sku_ultimate_flash_card
+    AndroidId: sku_ultimate_flash_card
+    WP8Id: 
+    _price: 2.90

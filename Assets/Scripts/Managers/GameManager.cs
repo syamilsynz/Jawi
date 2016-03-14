@@ -68,11 +68,6 @@ public class GameManager : MonoBehaviour
     public int hintPriceRemoveLetter;
     public int hintPriceSolveQuestion;
 
-    [Space(5)] [Header("Audio")] [Space(5)] 
-    public AudioClip letterClickSFX;    
-    public AudioClip correctSFX;    
-    public AudioClip wrongSFX;    
-    private AudioSource musicSource;    
     public void ClearPlayerAnswer(int index)
     { 
 //        Debug.Log("ClearJawiAnswer at " + index);
@@ -119,9 +114,6 @@ public class GameManager : MonoBehaviour
 		questionLib = questionGameObject.GetComponent<QuestionLibrary>();
         jawiManager = globalScript.GetComponent<JawiManager>();
         guiManager = canvasScript.GetComponent<GUIManager>();
-
-        //Get a component reference to the AudioSource attached to the UI game object
-        musicSource = GetComponent<AudioSource> ();
               
         SaveManager.LoadData();
 
@@ -135,6 +127,9 @@ public class GameManager : MonoBehaviour
             timerSlider.value = Timer.seconds;
             timerText.text = Timer.GetTimerStr();
             InvokeRepeating("UpdateTimer", 1.0f, timerDecreament);
+
+            // Achievement Hall of Fame
+            GPGSManager.Instance.Achievement_Hall_of_Fame();
         }
 
 		InitLevel();
@@ -411,8 +406,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            musicSource.clip = wrongSFX;
-            musicSource.Play();
+            AudioManager.Instance.PlayWrongAnswer();
             guiManager.targetBoxMaterial.color = new Color32(231, 76, 60, 255);
             Debug.Log("U get wrong answer");
         }
@@ -425,8 +419,7 @@ public class GameManager : MonoBehaviour
 	IEnumerator CorrectAnswer()
 	{
         playerWin = true;
-        musicSource.clip = correctSFX;
-        musicSource.Play();
+        AudioManager.Instance.PlayCorrectAnswer();
 
 		yield return new WaitForSeconds(2f);
 
@@ -436,8 +429,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator CorrectAnswerTimerMode()
     {
-        musicSource.clip = correctSFX;
-        musicSource.Play();
+        AudioManager.Instance.PlayCorrectAnswer();
 
         // Timer Mode
         Timer.IncreaseTimeRemaining(answerLib.setQuestion[questionId - 1].answerLength);
@@ -472,8 +464,7 @@ public class GameManager : MonoBehaviour
             || startPosition.y == targetParent.transform.FindChild("targetBox"+(totalBoxInRowOne + 1)).GetComponent<RectTransform>().localPosition.y)
         {
             // Play click SFX
-            musicSource.clip = letterClickSFX;
-            musicSource.Play();
+            AudioManager.Instance.PlayLetterClick();
             //                    Debug.Log("Have null and string empty");
             StartCoroutine(MoveLetter (go.transform, letterId - 1));
 
@@ -830,6 +821,9 @@ public class GameManager : MonoBehaviour
 
                 }
             }
+
+            // Achievement Remove Unwanted Letter
+            GPGSManager.Instance.Achievement_Remove_Unwanted_Letter();
         }
         else
         {
@@ -986,6 +980,9 @@ public class GameManager : MonoBehaviour
             guiManager.panelBuyHint.SetActive(false);
 
 		    StartCoroutine(OpenRandomLetter());
+
+            // Achievement Open one letter
+            GPGSManager.Instance.Achievement_Open_One_Letter();
         }
         else
         {
@@ -1008,6 +1005,9 @@ public class GameManager : MonoBehaviour
             // Solve the question
             ResetAllLetter();
             StartCoroutine(SolveQuestionIEnumerator());
+
+            // Achievement Solve Question
+            GPGSManager.Instance.Achievement_Solve_Question();
         }
         else
         {
@@ -1052,6 +1052,13 @@ public class GameManager : MonoBehaviour
         SaveManager.SaveData();
         Debug.Log("player pref : " + PlayerPrefs.GetInt("Question ID"));
 
+        UM_NotificationController.instance.ShowNotificationPoup("Notification", "question ID =  " + SaveManager.questionID + ", know = " + GPGSManager.Instance.knowledgeableValue);
+        // Achievement Knowledgeable
+        if (SaveManager.questionID >= GPGSManager.Instance.knowledgeableValue)
+        {
+            GPGSManager.Instance.Achievement_Knowledgeable();
+        }
+
         ResetLetters();
         InitLevel();
 
@@ -1085,6 +1092,8 @@ public class GameManager : MonoBehaviour
             SaveManager.timerHighScore = scoreTimer;
             SaveManager.SaveData();
 
+            // Leaderboard - Post New High Score
+            GPGSManager.Instance.PostScoreToLeaderboard(scoreTimer);
 
         }
 
@@ -1093,7 +1102,13 @@ public class GameManager : MonoBehaviour
         SaveManager.SaveData();
 
         guiManager.TimerLevelComplete();
+
+        // Achievement Harta Qarun
+        if (coinReceive >= GPGSManager.Instance.hartaQarunValue)
+            GPGSManager.Instance.Achievement_Harta_Qarun();
+        
         Debug.Log("GAME OVER");
+
 
     }
 

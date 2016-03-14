@@ -14,6 +14,8 @@ public class LevelUnlock : MonoBehaviour
         PlayerPrefs.SetString("1","1");
 
         CheckLevelUnlock(levelId);
+
+        CheckAchievement();
 	}
 	
     public void CheckLevelUnlock(string levelId)
@@ -47,6 +49,26 @@ public class LevelUnlock : MonoBehaviour
         }
     }
         
+    public void CheckAchievement()
+    {
+        // Achievement new adventure start
+//        if (PlayerPrefs.HasKey("2"))
+//        {
+//            GPGSManager.Instance.Achievement_New_Adventure();
+//        }
+//
+//        // Achievement landing kategori
+//        if (PlayerPrefs.HasKey("10"))
+//        {
+//            GPGSManager.Instance.Achievement_Landing_Time();
+//        }
+//
+//        // Achievement awan awangan punya kategori
+//        if (PlayerPrefs.HasKey("20"))
+//        {
+//            GPGSManager.Instance.Achievement_Awan_Awangan();
+//        }
+    }
         
 
 

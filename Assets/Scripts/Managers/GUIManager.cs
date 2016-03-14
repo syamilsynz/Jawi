@@ -59,9 +59,15 @@ public class GUIManager : MonoBehaviour
     //-------------
     public void BuyCoin(int value)
     {
-        SaveManager.coinAmount = SaveManager.coinAmount + value;
-        SaveManager.SaveData();
-        UpdateCoinInformation();
+
+
+
+    }
+
+    public void BuyMiniPouch(int value)
+    {
+        IABManager.Instance.miniPouch = value;
+        IABManager.Instance.BuyMiniPouch();
     }
 
 
@@ -78,6 +84,12 @@ public class GUIManager : MonoBehaviour
 //        completeLevelParent.transform.FindChild("SliderProgress").FindChild("Text").GetComponent<Text>().text = PlayerPrefs.GetInt("Question ID") + "/" + gameManager.answerLib.setQuestion.Length;
 
         completeLevelParent.transform.FindChild("Pouch Receive").transform.FindChild("Text").GetComponent<Text>().text = gameManager.coinReceive.ToString();
+
+        // Achievement Harta Qarun
+//        GPGSManager.Instance.Achievement_Harta_Qarun(gameManager.coinReceive);
+
+        if (gameManager.coinReceive >= GPGSManager.Instance.hartaQarunValue)
+            GPGSManager.Instance.Achievement_Harta_Qarun();
     }
         
     public void Win()
@@ -101,6 +113,58 @@ public class GUIManager : MonoBehaviour
     public void CloseBuyHint()
     {
         panelBuyHint.SetActive(false);
+    }
+
+    // Facebook Sharing
+    public void FacebookShare()
+    {
+        StartCoroutine(PostFBScreenshot());
+    }
+
+    private IEnumerator PostFBScreenshot() {
+
+
+        yield return new WaitForEndOfFrame();
+        // Create a texture the size of the screen, RGB24 format
+        int width = Screen.width;
+        int height = Screen.height;
+        Texture2D tex = new Texture2D( width, height, TextureFormat.RGB24, false );
+        // Read screen contents into the texture
+        tex.ReadPixels( new Rect(0, 0, width, height), 0, 0 ); 
+        tex.Apply();
+
+
+        UM_ShareUtility.FacebookShare("Tak faham, apakah ini?", tex);
+
+        Destroy(tex);
+
+    }
+     
+    // Whatsapp Sharing
+    public void WhatappsShare()
+    {
+        StartCoroutine(PostScreenshot());
+    }
+        
+    private IEnumerator PostScreenshot() 
+    {
+
+        yield return new WaitForEndOfFrame();
+        // Create a texture the size of the screen, RGB24 format
+        int width = Screen.width;
+        int height = Screen.height;
+//        Texture2D tex = new Texture2D( width, height, TextureFormat.RGB24, false );
+        Texture2D tex = new Texture2D( height, height, TextureFormat.RGB24, false );
+        // Read screen contents into the texture
+//        tex.ReadPixels( new Rect(0, 0, width, height), 0, 0 );
+        tex.ReadPixels( new Rect(0, 0, width, height), height/2 - width/2, 0 );
+        tex.Apply();
+
+
+        UM_ShareUtility.ShareMedia("Hint", "Tolong, apa jawapan jawi ni? \n download game JAWI di sini https://play.google.com/store/apps/details?id=com.ingeniworks.jawi", tex);
+
+        Destroy(tex);
+
     }
 
     // ------------------

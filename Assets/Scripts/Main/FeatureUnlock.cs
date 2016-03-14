@@ -13,16 +13,25 @@ public class FeatureUnlock : MonoBehaviour
     public bool coinDependency;             //  If this feature need coin to unlock?
     public string notification;
 
+    public bool iabDependency;
+    private const string ultimateFlashCardId = "keluarga";
+
 	// Use this for initialization
 	void Start () 
     {
         CheckFeatureUnlock(levelId);
+
+        if (iabDependency)
+        {
+            IABManager.Instance.CheckUltimateFlashCardStatus(ultimateFlashCardId);
+        }
+
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
-	
+        CheckFeatureUnlock(levelId);
 	}
 
     public void CheckFeatureUnlock(string levelId)
@@ -37,6 +46,7 @@ public class FeatureUnlock : MonoBehaviour
 
             condition.SetActive(false);
 
+            //CheckAchievement();
         }
         else
         {
@@ -76,18 +86,21 @@ public class FeatureUnlock : MonoBehaviour
                     Debug.Log("feature " + featureId.ToString() + " unlocked!");
 
                     CheckFeatureUnlock(levelId);
+
                 }
                 else
                 {
                     // Don't have enough coin
                     // pop up coin panel
                     Debug.Log("Not enough coin " + SaveManager.coinAmount );
+                    UM_NotificationController.instance.ShowNotificationPoup("Notification", "Not enough coin " + SaveManager.coinAmount);
                 }
             }
             else
             {
                 // give notification message
 
+                UM_NotificationController.instance.ShowNotificationPoup("Notification", notification);
                 Debug.Log(notification);
             }
         }
@@ -106,10 +119,34 @@ public class FeatureUnlock : MonoBehaviour
         else
         {
             // Unlock this feature if payment successfull
-            PlayerPrefs.SetString(featureId.ToString(), featureId.ToString());
+//            PlayerPrefs.SetString(featureId.ToString(), featureId.ToString());
 
-            CheckFeatureUnlock(levelId);
+            IABManager.Instance.BuyNonConsumableProduct(featureId);
+
+            UM_NotificationController.instance.ShowNotificationPoup("Notification", notification + " - " + featureId);
+            Debug.Log(notification);
         }
+    }
+
+    public void CheckAchievement()
+    {
+        // Achievement Unlock Ultimate Flash Card
+        if (PlayerPrefs.HasKey("keluarga"))
+        {
+            GPGSManager.Instance.Achievement_Ultimate_Flash_Card();
+        }
+
+        // Achievement All Flash Card
+        if (PlayerPrefs.HasKey("keluarga") && PlayerPrefs.HasKey("highestFlashCardUnlockbylevel") && PlayerPrefs.HasKey("allflashcardmustbuyusingcoin"))
+        {
+            GPGSManager.Instance.Achievement_Unlock_All_Flash_Card();
+        }
+            
+    }
+
+    private void CheckFeatureIdIABPurchasedStatus()
+    {
+        IABManager.Instance.CheckUltimateFlashCardStatus(featureId);
     }
 
 }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Google Play game services IDs.
+Save this file as res/values/games-ids.xml in your project.
+-->
+<resources>
+  <string name="app_id">114228415183</string>
+  <string name="achievement_new_adventure">CgkIz5WtxKkDEAIQBA</string>
+  <string name="achievement_hall_of_fame">CgkIz5WtxKkDEAIQAg</string>
+  <string name="achievement_ultimate_flash_card">CgkIz5WtxKkDEAIQAw</string>
+  <string name="achievement_unlock_all_flash_card">CgkIz5WtxKkDEAIQBQ</string>
+  <string name="achievement_landing_time">CgkIz5WtxKkDEAIQBg</string>
+  <string name="achievement_knowledgeable">CgkIz5WtxKkDEAIQBw</string>
+  <string name="achievement_harta_qarun">CgkIz5WtxKkDEAIQCA</string>
+  <string name="achievement_awan_awangan">CgkIz5WtxKkDEAIQCQ</string>
+  <string name="achievement_your_first_exclusive_pouch">CgkIz5WtxKkDEAIQCg</string>
+  <string name="achievement_open_one_letter">CgkIz5WtxKkDEAIQCw</string>
+  <string name="achievement_remove_unwanted_letter">CgkIz5WtxKkDEAIQDA</string>
+  <string name="achievement_solve_question">CgkIz5WtxKkDEAIQDQ</string>
+
+  <string name="leaderboard_hall_of_fame">CgkIz5WtxKkDEAIQAA</string>
+  <string name="event_open_play_service_tab">CgkIipfs2qcGEAIQDQ</string>
+  <string name="quest_play_service_intro">CgkIipfs2qcGEAIQDg</string>
+  <string name="quest_test3">CgkIipfs2qcGEAIQEA</string>
+  <string name="quest_t3">CgkIipfs2qcGEAIQEQ</string>
+  <string name="quest_rt">CgkIipfs2qcGEAIQEg</string>
+  <string name="quest_rt2">CgkIipfs2qcGEAIQEw</string>
+  <string name="quest_rt3">CgkIipfs2qcGEAIQFA</string>
+</resources>
