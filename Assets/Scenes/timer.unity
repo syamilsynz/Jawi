@@ -1082,6 +1082,8 @@ GameObject:
   - 114: {fileID: 181010695}
   - 114: {fileID: 181010696}
   - 82: {fileID: 181010697}
+  - 114: {fileID: 181010698}
+  - 114: {fileID: 181010699}
   m_Layer: 0
   m_Name: GlobalScript
   m_TagString: Untagged
@@ -1228,9 +1230,6 @@ MonoBehaviour:
   hintPriceOpenOneLetter: 25
   hintPriceRemoveLetter: 75
   hintPriceSolveQuestion: 100
-  letterClickSFX: {fileID: 8300000, guid: b06f3430e51cf408fafc4c1856e6f9c0, type: 3}
-  correctSFX: {fileID: 8300000, guid: c7d774f47b056420694f2ace15a373a0, type: 3}
-  wrongSFX: {fileID: 8300000, guid: 0be9130a09e7046e6ad4748017b9deec, type: 3}
   timerText: {fileID: 1652717086}
   timerSecond: 60
   timerSlider: {fileID: 549884820}
@@ -1334,6 +1333,39 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &181010698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 181010690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21d09c916dc9940beb3e247a3c7b41fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicPlayer: {fileID: 181010697}
+  effectPlayer: {fileID: 181010697}
+  effectGame: {fileID: 181010697}
+  menuClickClip: {fileID: 8300000, guid: f353b186732fe468cadd8d0fc7fc47cb, type: 3}
+  letterClickClip: {fileID: 8300000, guid: b06f3430e51cf408fafc4c1856e6f9c0, type: 3}
+  correctAnswerClip: {fileID: 8300000, guid: e9da322abec4f4ed6b867457938ee941, type: 3}
+  wrongAnswerClip: {fileID: 8300000, guid: b24b4c9da1dc5472db1da29d4ed30bf2, type: 3}
+  cashRegisterClip: {fileID: 8300000, guid: 21909a523ceb34f9fbf6aa4536f1503c, type: 3}
+  audioEnabled: 0
+--- !u!114 &181010699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 181010690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc6392c002c5b424d956e9ed93c5f9f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knowledgeableValue: 3
+  hartaQarunValue: 10
 --- !u!1 &191893685
 GameObject:
   m_ObjectHideFlags: 0
@@ -3792,7 +3824,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2142133771}
-        m_MethodName: BuyCoin
+        m_MethodName: BuyMiniPouch
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

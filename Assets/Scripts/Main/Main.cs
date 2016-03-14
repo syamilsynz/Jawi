@@ -10,6 +10,7 @@ public class Main : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
+//        PlayerPrefs.DeleteAll();
         // Load Playerpref data
         SaveManager.LoadData();
 	}

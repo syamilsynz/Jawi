@@ -21,4 +21,10 @@ public class GuiMain : MonoBehaviour
         SaveManager.coinAmount = SaveManager.coinAmount + value;
         SaveManager.SaveData();
     }
+
+    public void BuyMiniPouch(int value)
+    {
+        IABManager.Instance.miniPouch = value;
+        IABManager.Instance.BuyMiniPouch();
+    }
 }

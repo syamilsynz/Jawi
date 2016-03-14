@@ -10,6 +10,7 @@ public class SaveManager : MonoBehaviour
     public static string levelName;
     public static int levelId;
     public static int timerHighScore;
+    public static int audioEnabled = 1;
 
     public void SetQuestionCategory(int id)
     {
@@ -50,6 +51,7 @@ public class SaveManager : MonoBehaviour
             levelName = PlayerPrefs.GetString("Level Name");
             levelId = PlayerPrefs.GetInt("Level ID");
             timerHighScore = PlayerPrefs.GetInt("Timer High Score");
+            audioEnabled = PlayerPrefs.GetInt("AudioEnabled");
         }
 
         PlayerPrefs.Save();
@@ -65,6 +67,7 @@ public class SaveManager : MonoBehaviour
         PlayerPrefs.SetString("Level Name", levelName);
         PlayerPrefs.SetInt("Level ID", levelId);
         PlayerPrefs.SetInt("Timer High Score", timerHighScore);
+        PlayerPrefs.SetInt("AudioEnabled", audioEnabled);
 
         PlayerPrefs.Save();
     }
