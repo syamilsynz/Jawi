@@ -16,9 +16,15 @@ public class FeatureUnlock : MonoBehaviour
     public bool iabDependency;
     private const string ultimateFlashCardId = "keluarga";
 
+    public GameObject fadeGameObject;
+    private LoadScene loadLevelFade;
+
 	// Use this for initialization
 	void Start () 
     {
+
+        loadLevelFade = GameObject.Find("FadeSceneAnimation").GetComponent<LoadScene>();
+
         CheckFeatureUnlock(levelId);
 
         if (iabDependency)
@@ -67,8 +73,9 @@ public class FeatureUnlock : MonoBehaviour
         {
 //            PlayerPrefs.DeleteKey(featureId.ToString());
             // Load scene this feature
-            SceneManager.LoadScene(sceneName);
-
+//            SceneManager.LoadScene(sceneName);
+            loadLevelFade = GameObject.Find("FadeSceneAnimation").GetComponent<LoadScene>();
+            loadLevelFade.LoadLevelWithFadeAnimation(sceneName);
         }
         else
         {
@@ -113,8 +120,9 @@ public class FeatureUnlock : MonoBehaviour
         {
             //            PlayerPrefs.DeleteKey(featureId.ToString());
             // Load scene this feature
-            SceneManager.LoadScene(sceneName);
-
+//            SceneManager.LoadScene(sceneName);
+            loadLevelFade = GameObject.Find("FadeSceneAnimation").GetComponent<LoadScene>();
+            loadLevelFade.LoadLevelWithFadeAnimation(sceneName);
         }
         else
         {

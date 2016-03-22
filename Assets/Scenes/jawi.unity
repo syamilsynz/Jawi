@@ -85,6 +85,54 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &9980844
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 413794, guid: 9ab6942170c654a1aa850004b1a54c3d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413794, guid: 9ab6942170c654a1aa850004b1a54c3d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413794, guid: 9ab6942170c654a1aa850004b1a54c3d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413794, guid: 9ab6942170c654a1aa850004b1a54c3d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413794, guid: 9ab6942170c654a1aa850004b1a54c3d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413794, guid: 9ab6942170c654a1aa850004b1a54c3d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413794, guid: 9ab6942170c654a1aa850004b1a54c3d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 413794, guid: 9ab6942170c654a1aa850004b1a54c3d, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9ab6942170c654a1aa850004b1a54c3d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!114 &9980845 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11466644, guid: 9ab6942170c654a1aa850004b1a54c3d,
+    type: 2}
+  m_PrefabInternal: {fileID: 9980844}
+  m_Script: {fileID: 11500000, guid: 8601da1c3f2234e97bcf6575077d3b3f, type: 3}
 --- !u!1 &10183560
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,7 +255,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 14242856}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 0d331d430291449ccab7e23dadae0871, type: 2}
   m_CullingMode: 0
@@ -577,12 +625,12 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 181010696}
-          m_MethodName: SetActiveFalse
-          m_Mode: 2
+        - m_Target: {fileID: 2142133771}
+          m_MethodName: CloseBuyHint
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 1046325648}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -1349,12 +1397,12 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 181010696}
-          m_MethodName: SetActiveFalse
-          m_Mode: 2
+        - m_Target: {fileID: 2142133771}
+          m_MethodName: CloseBuyCoin
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 10183560}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -1404,6 +1452,8 @@ GameObject:
   - 114: {fileID: 165582395}
   - 114: {fileID: 165582394}
   - 114: {fileID: 165582396}
+  - 95: {fileID: 165582398}
+  - 114: {fileID: 165582399}
   m_Layer: 5
   m_Name: PanelBuyHint
   m_TagString: Untagged
@@ -1501,6 +1551,34 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 165582392}
+--- !u!95 &165582398
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 165582392}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f49ba7817a5aa471dafde5d4cd2ba482, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &165582399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 165582392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26d698aa3f434ce28271a2cbbffcdd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &178247443
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,44 +1769,7 @@ MonoBehaviour:
   - ya
   - ye
   - nya
-  jawiCharacterSVG:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  jawiCharacterSVG: []
 --- !u!114 &181010692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1740,6 +1781,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8601da1c3f2234e97bcf6575077d3b3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeImage: {fileID: 0}
+  fadeColorAnimationClip: {fileID: 0}
+  fadeDelay: 0.5
 --- !u!4 &181010693
 Transform:
   m_ObjectHideFlags: 0
@@ -2065,12 +2109,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 181010696}
-        m_MethodName: SetActiveFalse
-        m_Mode: 2
+      - m_Target: {fileID: 2142133771}
+        m_MethodName: CloseBuyHint
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1046325648}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3345,7 +3389,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 25, y: 0}
-  m_SizeDelta: {x: 30, y: 30}
+  m_SizeDelta: {x: 25, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &328818291
 MonoBehaviour:
@@ -3394,6 +3438,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 181010692}
           m_MethodName: LoadLevel
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: main
+            m_BoolArgument: 0
+          m_CallState: 0
+        - m_Target: {fileID: 9980845}
+          m_MethodName: LoadLevelWithFadeAnimation
           m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3580,7 +3635,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &379870247
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4403,12 +4458,12 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 181010696}
-          m_MethodName: SetActiveTrue
-          m_Mode: 2
+        - m_Target: {fileID: 2142133771}
+          m_MethodName: OpenBuyHint
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 1046325648}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -6790,6 +6845,8 @@ GameObject:
   - 114: {fileID: 792136270}
   - 114: {fileID: 792136269}
   - 114: {fileID: 792136273}
+  - 114: {fileID: 792136274}
+  - 95: {fileID: 792136271}
   m_Layer: 5
   m_Name: PanelBuyCoin
   m_TagString: Untagged
@@ -6858,6 +6915,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 1
+--- !u!95 &792136271
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 792136267}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f49ba7817a5aa471dafde5d4cd2ba482, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!222 &792136272
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6887,6 +6961,17 @@ MonoBehaviour:
   m_Type: 0
   m_PreserveAspect: 0
   m_UsePivot: 0
+--- !u!114 &792136274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 792136267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26d698aa3f434ce28271a2cbbffcdd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &809939183
 GameObject:
   m_ObjectHideFlags: 0
@@ -7849,6 +7934,17 @@ MonoBehaviour:
           m_CallState: 0
         - m_Target: {fileID: 181010692}
           m_MethodName: LoadLevel
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: main
+            m_BoolArgument: 0
+          m_CallState: 0
+        - m_Target: {fileID: 9980845}
+          m_MethodName: LoadLevelWithFadeAnimation
           m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -9299,12 +9395,12 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 181010696}
-          m_MethodName: SetActiveTrue
-          m_Mode: 2
+        - m_Target: {fileID: 2142133771}
+          m_MethodName: OpenBuyCoin
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 10183560}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -9469,7 +9565,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  _vectorGraphics: {fileID: 11400000, guid: db7dac459803b44ef811e7ce93ad4b4a, type: 2}
+  _vectorGraphics: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_UsePivot: 0
@@ -9933,28 +10029,28 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 181010696}
-        m_MethodName: SetActiveFalse
-        m_Mode: 2
+      - m_Target: {fileID: 2142133771}
+        m_MethodName: CloseBuyCoin
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 10183560}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 200
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 181010696}
-        m_MethodName: SetActiveFalse
-        m_Mode: 2
+      - m_Target: {fileID: 2142133771}
+        m_MethodName: CloseBuyCoin
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 594078638}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!222 &1209852139
@@ -10868,7 +10964,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1326075756}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 0d331d430291449ccab7e23dadae0871, type: 2}
   m_CullingMode: 0
@@ -16442,12 +16538,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 181010696}
-        m_MethodName: SetActiveTrue
-        m_Mode: 2
+      - m_Target: {fileID: 2142133771}
+        m_MethodName: OpenBuyCoin
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 10183560}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -17875,6 +17971,8 @@ MonoBehaviour:
   btnOpenOneLetter: {fileID: 1343256615}
   btnRemoveLetter: {fileID: 1682242974}
   btnSolveQuestion: {fileID: 290739639}
+  animBuyCoin: {fileID: 792136271}
+  animBuyHint: {fileID: 165582398}
   timerLevelCompleteParent: {fileID: 0}
 --- !u!1 &2147348657
 GameObject:

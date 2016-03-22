@@ -1,0 +1,36 @@
+fileFormatVersion: 2
+guid: 9ff05d9f6b7484f6f94e4bf1770c2b7d
+timeCreated: 1458547280
+licenseType: Free
+NativeFormatImporter:
+  userData: "<?xml version=\"1.0\" standalone=\"no\"?>\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD
+    SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n<svg width=\"100%\"
+    height=\"100%\" viewBox=\"0 0 200 200\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"
+    xmlns:xlink=\"http://www.w3.org/1999/xlink\" xml:space=\"preserve\" style=\"fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;\">\n
+    \   <g transform=\"matrix(1,0,0,1,-4946.27,-5239.45)\">\n        <g transform=\"matrix(0.15045,-4.53731e-17,-2.0808e-16,0.218056,3852.65,3981.15)\">\n
+    \           <g transform=\"matrix(6.67137,9.12368e-15,1.75542e-14,4.58597,-25288.4,-18257.4)\">\n
+    \               <rect x=\"4880.18\" y=\"5239.45\" width=\"199.261\" height=\"200\"
+    style=\"fill:white;fill-opacity:0.01;\"/>\n            </g>\n        </g>\n        <g
+    transform=\"matrix(0.15045,-4.53731e-17,-2.0808e-16,0.218056,3852.65,3981.15)\">\n
+    \           <g transform=\"matrix(6.64673,1.38305e-15,6.34263e-15,4.58597,-25817.1,-20547.5)\">\n
+    \               <g transform=\"matrix(11.1111,0,0,11.1111,1865.78,1529.01)\">\n
+    \                   <path d=\"M295.244,393.028L286.865,393.028C285.741,393.028
+    284.845,392.833 284.177,392.439C283.34,391.947 282.921,391.177 282.921,390.13C282.921,389.586
+    283.044,389.028 283.29,388.461C283.378,388.257 283.588,387.866 283.923,387.293L284.185,387.46C284.057,387.73
+    283.931,387.999 283.807,388.267C283.639,388.683 283.554,389.055 283.554,389.383C283.554,390.073
+    283.917,390.61 284.642,390.99C285.293,391.33 286.115,391.5 287.111,391.5L294.549,391.5L294.549,391.262C294.549,390.607
+    294.47,390.072 294.311,389.66C294.155,389.247 293.885,388.893 293.504,388.6L294.181,387.169C294.437,387.49
+    294.593,387.692 294.646,387.774C295.044,388.429 295.244,389.384 295.244,390.637L295.244,393.028Z\"
+    style=\"fill:white;fill-rule:nonzero;\"/>\n                </g>\n                <g
+    transform=\"matrix(11.1111,0,0,11.1111,1865.78,1529.01)\">\n                    <path
+    d=\"M289.097,385.843L288.429,387.116L287.006,386.378L287.655,385.106L289.097,385.843Z\"
+    style=\"fill:white;fill-rule:nonzero;\"/>\n                </g>\n                <g
+    transform=\"matrix(11.1111,0,0,11.1111,1865.78,1529.01)\">\n                    <path
+    d=\"M289.386,383.49L288.71,384.773L287.305,384.017L287.954,382.735L289.386,383.49Z\"
+    style=\"fill:white;fill-rule:nonzero;\"/>\n                </g>\n                <g
+    transform=\"matrix(11.1111,0,0,11.1111,1865.78,1529.01)\">\n                    <path
+    d=\"M291.116,385.053L290.43,386.318L289.009,385.563L289.667,384.306L291.116,385.053Z\"
+    style=\"fill:white;fill-rule:nonzero;\"/>\n                </g>\n            </g>\n
+    \       </g>\n    </g>\n</svg>\n"
+  assetBundleName: 
+  assetBundleVariant: 

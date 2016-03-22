@@ -15,7 +15,8 @@ public class JawiManager : MonoBehaviour
     {
         //SetupJawi();
 
-        jawiSVG = Resources.LoadAll <SVGAsset> ("Jawi SVG");  
+        jawiSVG = Resources.LoadAll <SVGAsset> ("Svg/Letter/Jawi White Alpha/");  
+        jawiCharacterSVG = new SVGAsset[jawiSVG.Length];
 //        jawiSVG = Resources.LoadAll <SVGAsset> ("Jawi Letter");  
         SetupJawiSVG();
     }

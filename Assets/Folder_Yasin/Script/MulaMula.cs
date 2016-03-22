@@ -77,4 +77,5 @@ public class MulaMula : MonoBehaviour {
 	{
 		SceneManager.LoadScene (0);
 	}
+        
 }

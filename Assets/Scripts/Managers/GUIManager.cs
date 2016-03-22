@@ -31,6 +31,9 @@ public class GUIManager : MonoBehaviour
     public Button btnRemoveLetter;
     public Button btnSolveQuestion;
 
+    // Animator
+    public Animator animBuyCoin;
+    public Animator animBuyHint;
 
 	// Use this for initialization
 	void Start () 
@@ -57,6 +60,19 @@ public class GUIManager : MonoBehaviour
     //-------------
     // COIN
     //-------------
+    public void OpenBuyCoin()
+    {
+        animBuyCoin.transform.parent.gameObject.SetActive(true);
+        animBuyCoin.SetBool("Open", true);
+
+
+    }
+
+    public void CloseBuyCoin()
+    {
+        animBuyCoin.SetBool("Open", false);
+    }
+
     public void BuyCoin(int value)
     {
 
@@ -107,12 +123,14 @@ public class GUIManager : MonoBehaviour
     //----------
     public void OpenBuyHint()
     {
-        panelBuyHint.SetActive(true);
+        animBuyHint.transform.parent.gameObject.SetActive(true);
+        animBuyHint.SetBool("Open", true);
+
     }
 
     public void CloseBuyHint()
     {
-        panelBuyHint.SetActive(false);
+        animBuyHint.SetBool("Open", false);
     }
 
     // Facebook Sharing

@@ -7,18 +7,24 @@ public class Main : MonoBehaviour
 {
     public Text playerCoin;
 
+    public ScrollRect myScrollRect;
+
 	// Use this for initialization
 	void Start () 
 	{
 //        PlayerPrefs.DeleteAll();
         // Load Playerpref data
         SaveManager.LoadData();
+
+        myScrollRect.verticalNormalizedPosition =  PlayerPrefs.GetFloat("mapVerticalValue");;
+
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
         playerCoin.text = "Anda ada " + SaveManager.coinAmount.ToString();
+
 	}
 
     public void GoToScene(string name)
@@ -27,5 +33,11 @@ public class Main : MonoBehaviour
 
         SceneManager.LoadScene(name);
 	}
+
+    public void SetMapPosition()
+    {
+//        Debug.Log("Vertical value : " + myScrollRect.verticalNormalizedPosition);
+        PlayerPrefs.SetFloat("mapVerticalValue", myScrollRect.verticalNormalizedPosition);
+    }
         
 }

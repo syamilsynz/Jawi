@@ -3,6 +3,9 @@ using System.Collections;
 
 public class GuiMain : MonoBehaviour 
 {
+    public GameObject panelBuyCoin;
+    // Animator
+    public Animator animBuyCoin;
 
 	// Use this for initialization
 	void Start () 
@@ -16,6 +19,21 @@ public class GuiMain : MonoBehaviour
 	
 	}
 
+    public void OpenBuyCoin()
+    {
+//        panelBuyCoin.SetActive(true);
+
+        animBuyCoin.transform.parent.gameObject.SetActive(true);
+        animBuyCoin.SetBool("Open", true);
+
+
+    }
+
+    public void CloseBuyCoin()
+    {
+        animBuyCoin.SetBool("Open", false);
+    }
+
     public void BuyCoin(int value)
     {
         SaveManager.coinAmount = SaveManager.coinAmount + value;
@@ -27,4 +45,17 @@ public class GuiMain : MonoBehaviour
         IABManager.Instance.miniPouch = value;
         IABManager.Instance.BuyMiniPouch();
     }
+        
+    public void TengokAds()
+    {
+        UnityAdsManager.Instance.ShowAd();
+    }
+
+    public void TengokRewardAds()
+    {
+//        UnityAdsManager.Instance.ShowRewardedAd();
+        UnityAdsManager.Instance.ShowCoinRewardedAd(100);
+    }
+
+
 }

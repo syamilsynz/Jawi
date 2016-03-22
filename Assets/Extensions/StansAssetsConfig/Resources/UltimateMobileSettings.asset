@@ -11,10 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b91a7deec5b9f48e785f526d406a9b0f, type: 3}
   m_Name: UltimateMobileSettings
   m_EditorClassIdentifier: 
-  ToolbarSelectedIndex: 2
+  ToolbarSelectedIndex: 0
   IOSAdEdngine: 0
   WP8AdEdngine: 0
-  IsInAppSettingsProductsOpen: 1
+  IsInAppSettingsProductsOpen: 0
   IsCameraAndGallerySettingsOpen: 1
   IsCameraAndGalleryAndroidSettingsOpen: 0
   IsCameraAndGalleryIOSSettingsOpen: 0
@@ -130,7 +130,7 @@ MonoBehaviour:
     IsIncremental: 0
     IOSId: Solve Question
     AndroidId: CgkIz5WtxKkDEAIQDQ
-  IsAchievementsOpen: 1
+  IsAchievementsOpen: 0
   IsLeaderBoardsOpen: 0
   InAppProducts:
   - IsConsumable: 1

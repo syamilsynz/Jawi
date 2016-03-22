@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Name: IOSNativeSettings
   m_EditorClassIdentifier: 
   AppleId: XXXXXXXXX
-  ToolbarIndex: 0
+  ToolbarIndex: 2
   SendFakeEventsInEditor: 1
   DefaultStoreProductsView: []
   InAppProducts: []
   Leaderboards:
-  - IsOpen: 1
+  - IsOpen: 0
     _info:
       Title: leaderboard_hall_of_fame
       Description: Best Score for Hall of Fame

@@ -1052,7 +1052,6 @@ public class GameManager : MonoBehaviour
         SaveManager.SaveData();
         Debug.Log("player pref : " + PlayerPrefs.GetInt("Question ID"));
 
-        UM_NotificationController.instance.ShowNotificationPoup("Notification", "question ID =  " + SaveManager.questionID + ", know = " + GPGSManager.Instance.knowledgeableValue);
         // Achievement Knowledgeable
         if (SaveManager.questionID >= GPGSManager.Instance.knowledgeableValue)
         {
