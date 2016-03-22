@@ -20,8 +20,8 @@ public class IABManager : MonoBehaviour
         instance = this;
 
         // ------- IAB ---------
-        UM_InAppPurchaseManager.OnPurchaseFlowFinishedAction += OnPurchaseFlowFinishedAction;
-        UM_InAppPurchaseManager.OnBillingConnectFinishedAction += OnConnectFinished;
+//        UM_InAppPurchaseManager.OnPurchaseFlowFinishedAction += OnPurchaseFlowFinishedAction;
+//        UM_InAppPurchaseManager.OnBillingConnectFinishedAction += OnConnectFinished;
     }
 
 	// Use this for initialization

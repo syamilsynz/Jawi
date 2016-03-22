@@ -124,6 +124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8601da1c3f2234e97bcf6575077d3b3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeImage: {fileID: 0}
+  fadeColorAnimationClip: {fileID: 0}
+  fadeDelay: 0.5
 --- !u!1 &147960113
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,6 +785,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cc39b69aaf89149a7b9270cdb4013836, type: 2}
   - {fileID: 11400000, guid: ff328779e92e54fb39ef28f2ea7f02c2, type: 2}
   - {fileID: 11400000, guid: cc8b17bc8b88f4f2a855bc43b0f55243, type: 2}
+  svgFlashName: []
   audioAsset:
   - {fileID: 8300000, guid: 21909a523ceb34f9fbf6aa4536f1503c, type: 3}
   - {fileID: 8300000, guid: 7db0c87ec4fdb0e48af04349c4f14df9, type: 3}
@@ -813,6 +817,7 @@ MonoBehaviour:
   offsetY: 0.5
   moveOffsetX: 420
   moveSpeed: 5
+  flashNameIsTextBased: 0
   player: {fileID: 147960113}
 --- !u!82 &1295920834
 AudioSource:
@@ -949,6 +954,17 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: main
             m_BoolArgument: 0
+          m_CallState: 0
+        - m_Target: {fileID: 1901366118}
+          m_MethodName: LoadLevelWithFadeAnimation
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: main
+            m_BoolArgument: 0
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -1055,6 +1071,54 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1831734659}
+--- !u!1001 &1901366117
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 413794, guid: 9ab6942170c654a1aa850004b1a54c3d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413794, guid: 9ab6942170c654a1aa850004b1a54c3d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413794, guid: 9ab6942170c654a1aa850004b1a54c3d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413794, guid: 9ab6942170c654a1aa850004b1a54c3d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413794, guid: 9ab6942170c654a1aa850004b1a54c3d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413794, guid: 9ab6942170c654a1aa850004b1a54c3d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 413794, guid: 9ab6942170c654a1aa850004b1a54c3d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 413794, guid: 9ab6942170c654a1aa850004b1a54c3d, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9ab6942170c654a1aa850004b1a54c3d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!114 &1901366118 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11466644, guid: 9ab6942170c654a1aa850004b1a54c3d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1901366117}
+  m_Script: {fileID: 11500000, guid: 8601da1c3f2234e97bcf6575077d3b3f, type: 3}
 --- !u!1 &1918324912
 GameObject:
   m_ObjectHideFlags: 0

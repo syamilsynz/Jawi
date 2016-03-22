@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 using SVGImporter;
+using UnityEngine.UI;
 
 public class FlashCard : MonoBehaviour 
 {
 
     public SVGAsset[] svgAsset;
+    public SVGAsset[] svgFlashName;
     public AudioClip[] audioAsset;
     public SVGImage svgimage;
 
@@ -18,6 +20,8 @@ public class FlashCard : MonoBehaviour
     public float offsetY;
     public float moveOffsetX;
     public float moveSpeed = 2f;
+
+    public bool flashNameIsTextBased;   // text or svg image
 
 
     // Use this for initialization
@@ -32,17 +36,25 @@ public class FlashCard : MonoBehaviour
 
             clone = Instantiate(player, new Vector2(transform.position.x + (offsetX * i), transform.position.y +  offsetY), transform.rotation) as GameObject;
             clone.transform.parent = this.gameObject.transform;    
-            clone.GetComponent<SVGImage>().vectorGraphics = svgAsset[i];
+//            clone.GetComponent<SVGImage>().vectorGraphics = svgAsset[i];
             clone.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+
+            clone.transform.FindChild("huruf").GetComponent<SVGImage>().vectorGraphics = svgAsset[i];
+            clone.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+
+            if (flashNameIsTextBased)
+                clone.transform.FindChild("TextFlashName").GetComponent<Text>().text = svgAsset[i].name.ToUpper();
+            else
+                clone.transform.FindChild("SvgFlashName").GetComponent<SVGImage>().vectorGraphics = svgFlashName[i];
 //            Example(this.gameObject);
         }
 
-        int children = transform.childCount;
-        for (int i = 0; i < children; ++i)
-        {
+//        int children = transform.childCount;
+//        for (int i = 0; i < children; ++i)
+//        {
 //            transform.GetChild(i).GetComponent<RectTransform>().position.x = transform.GetChild(i).GetComponent<RectTransform>().position.x + (100f * i);
-            print("Child : " + i + " = x = " + transform.GetChild(i).GetComponent<RectTransform>().position.x);
-        }
+//            print("Child : " + i + " = x = " + transform.GetChild(i).GetComponent<RectTransform>().position.x);
+//        }
 
         //Get a component reference to the AudioSource attached to the UI game object
         musicSource = GetComponent<AudioSource> ();

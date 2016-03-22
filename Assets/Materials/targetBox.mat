@@ -135,6 +135,10 @@ Material:
         second: 15
       data:
         first:
+          name: _UseUIAlphaClip
+        second: 0
+      data:
+        first:
           name: _Parallax
         second: 0.02
       data:
@@ -169,10 +173,6 @@ Material:
         first:
           name: _Metallic
         second: 0
-      data:
-        first:
-          name: _UseUIAlphaClip
-        second: 0
     m_Colors:
       data:
         first:
@@ -181,7 +181,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 0.25490198, g: 0.25490198, b: 0.25490198, a: 1}
+        second: {r: 0.15294118, g: 0.68235296, b: 0.3764706, a: 1}
       data:
         first:
           name: _Params
