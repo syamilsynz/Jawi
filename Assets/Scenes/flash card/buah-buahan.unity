@@ -370,7 +370,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  _vectorGraphics: {fileID: 11400000, guid: 8eee2bf4db8364b1aab42e8d7b068a9e, type: 2}
+  _vectorGraphics: {fileID: 11400000, guid: 286985bce92ad4bde8349d113b6a35b8, type: 2}
   m_Type: 0
   m_PreserveAspect: 0
   m_UsePivot: 0

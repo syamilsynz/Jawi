@@ -1,22 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!43 &4395016
+--- !u!43 &4363068
 Mesh:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 
+  m_Name: Header_panel
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
-    indexCount: 0
+    indexCount: 36
     topology: 0
     firstVertex: 0
-    vertexCount: 0
+    vertexCount: 14
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 0, y: 0.000000007450581, z: -0}
+      m_Extent: {x: 0.82997, y: 0.201965, z: 0}
   m_Shapes:
     vertices: []
     shapes: []
@@ -29,11 +29,11 @@ Mesh:
   m_IsReadable: 1
   m_KeepVertices: 1
   m_KeepIndices: 1
-  m_IndexBuffer: 
+  m_IndexBuffer: 0000010002000000030001000000040003000000050004000000060005000700060000000700080006000700090008000a00090007000b0009000a000b000c0009000c000b000d00
   m_Skin: []
   m_VertexData:
-    m_CurrentChannels: 1
-    m_VertexCount: 0
+    m_CurrentChannels: 5
+    m_VertexCount: 14
     m_Channels:
     - stream: 0
       offset: 0
@@ -44,9 +44,9 @@ Mesh:
       format: 0
       dimension: 0
     - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
+      offset: 12
+      format: 2
+      dimension: 4
     - stream: 0
       offset: 0
       format: 0
@@ -67,8 +67,8 @@ Mesh:
       offset: 0
       format: 0
       dimension: 0
-    m_DataSize: 0
-    _typelessdata: 
+    m_DataSize: 224
+    _typelessdata: ea78543fe9cf4ebe00000080e9c71dfff4a1533f48bfdd3d00000080e9c71dfff263543fdf4fad3d00000080e9c71dff7a014e3f34d7193e00000080e9c71dff16e8433f8c4a3a3e00000080e9c71dff2289363f03604c3e00000080e9c71dffc0ff2e3feacf4e3e00000080e9c71dff416554bf4bcd4ebe00000080e9c71dff12142fbfeacf4e3e00000080e9c71dff1b9e36bf03604c3e00000080e9c71dffea7854bf1e55ad3d00000080e9c71dffedb653bf87c4dd3d00000080e9c71dff0dfd43bf2b4d3a3e00000080e9c71dff72164ebfd3d9193e00000080e9c71dff
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -122,8 +122,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
+    m_Center: {x: 0, y: 0.000000007450581, z: -0}
+    m_Extent: {x: 0.82997, y: 0.201965, z: 0}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -137,13 +137,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
-  m_Name: background_blur_hint
+  m_Name: Header_panel
   m_EditorClassIdentifier: 
-  _lastTimeModified: 635924577412804050
-  _documentAsset: {fileID: 11493566}
-  _sharedMesh: {fileID: 4395016}
-  _antialiasing: 1
-  _antialiasingWidth: 0.2
+  _lastTimeModified: 635942730500118230
+  _documentAsset: {fileID: 11422692}
+  _sharedMesh: {fileID: 4363068}
+  _antialiasing: 0
+  _antialiasingWidth: 1
   _generateCollider: 0
   _keepSVGFile: 0
   _ignoreSVGCanvas: 1
@@ -169,10 +169,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2.6567998
-    height: 3.6264
+    width: 1.65994
+    height: 0.40394
   _layers: []
---- !u!114 &11493566
+--- !u!114 &11422692
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
