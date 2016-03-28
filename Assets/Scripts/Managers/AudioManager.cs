@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource musicPlayer;
     public AudioSource effectPlayer;
     public AudioSource effectGame;
+    private AudioSource audioSource;
  
     public AudioClip menuClickClip;
     public AudioClip letterClickClip;
@@ -22,6 +23,9 @@ public class AudioManager : MonoBehaviour
     void Awake()
     {
         instance = this;
+
+        audioSource = new AudioSource();
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     // Use this for initialization
@@ -106,6 +110,16 @@ public class AudioManager : MonoBehaviour
         {
             effectPlayer.clip = wrongAnswerClip;
             effectPlayer.Play();
+
+        }
+    }
+
+    public void PlayAudioClip(AudioClip audioclip)
+    {
+        if (audioEnabled)
+        {
+            audioSource.clip = audioclip;
+            audioSource.Play();
 
         }
     }

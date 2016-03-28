@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4372504
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: icon_close_v2
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 90
+    topology: 0
+    firstVertex: 0
+    vertexCount: 32
+    localAABB:
+      m_Center: {x: 0, y: -0.000000014901161, z: -0}
+      m_Extent: {x: 0.33732, y: 0.33731002, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 00000100020000000300010004000300000004000500030004000600050007000600040006000700080009000a000b000c000a0009000c000d000a000e000d000c000f000d000e000f0010000d000f0011001000120011000f001300110012001300140011001300020014000200130015001600170018001600190017001a00190016001b0019001a001b001c0019001b001d001c000b001d001b000b001e001d001e000b000a00010014000200140001001f00
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 5
+    m_VertexCount: 32
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 512
+    _typelessdata: 7632a8bef7408b3e00000080e8c61dff008027b78881673d00000080e8c61dff007767bd00c0a7b700000080e8c61dffe5448bbec733a83e00000080e8c61dff35b5acbe0c07923e00000080e8c61dfffa0a92bee6b3ac3e00000080e8c61dff006fa1be47b1ac3e00000080e8c61dff35b5acbeb16da13e00000080e8c61dff7632a8bec733a83e00000080e8c61dffe5448bbe872ea8be00000080e8c61dffe7b3ac3eab09923e00000080e8c61dff008027b7905767bd00000080e8c61dff5b0892be47b1acbe00000080e8c61dff35b5ac3e5170a13e00000080e8c61dff5070a1bee7b3acbe00000080e8c61dff7632a8bec533a8be00000080e8c61dff1735a83ec733a83e00000080e8c61dff5170a13ee6b3ac3e00000080e8c61dff96b2acbeb16da1be00000080e8c61dff96b2acbe0b0792be00000080e8c61dff5d08923ee6b3ac3e00000080e8c61dff7632a8bef7408bbe00000080e8c61dffff6ea13ea7aeacbe00000080e8c61dffe7b3ac3e116ba1be00000080e8c61dff1735a83e872ea8be00000080e8c61dff97b2ac3e6d0492be00000080e8c61dffbd05923ef5afacbe00000080e8c61dff47428b3e872ea8be00000080e8c61dffd72fa83ef7408bbe00000080e8c61dff008c673d00c0a7b700000080e8c61dff1735a83e35468b3e00000080e8c61dff47428b3ec733a83e00000080e8c61dff
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: -0.000000014901161, z: -0}
+    m_Extent: {x: 0.33732, y: 0.33731002, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: icon_close_v2
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635946014179345410
+  _documentAsset: {fileID: 11419632}
+  _sharedMesh: {fileID: 4372504}
+  _antialiasing: 0
+  _antialiasingWidth: 0
+  _generateCollider: 0
+  _keepSVGFile: 0
+  _ignoreSVGCanvas: 1
+  _colliderShape: []
+  _format: 2
+  _useGradients: 1
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 0.5}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients: []
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  _layers: []
+--- !u!114 &11419632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: 
+  _title: 
+  _description: 

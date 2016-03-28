@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 83e8eb88ac947475d8d7cad6301def2d
+timeCreated: 1459004558
+licenseType: Free
+NativeFormatImporter:
+  userData: "<?xml version=\"1.0\" standalone=\"no\"?>\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD
+    SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n<svg width=\"100%\"
+    height=\"100%\" viewBox=\"0 0 69 69\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"
+    xmlns:xlink=\"http://www.w3.org/1999/xlink\" xml:space=\"preserve\" style=\"fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;\">\n
+    \   <g transform=\"matrix(1,0,0,1,-338.612,-805.796)\">\n        <g transform=\"matrix(4.16667,0,0,4.16667,0,0)\">\n
+    \           <path d=\"M97.317,208.084L90.79,201.557L97.318,195.028C97.692,194.654
+    97.693,194.046 97.318,193.672C96.943,193.297 96.336,193.297 95.961,193.672L89.433,200.2L82.905,193.672C82.53,193.297
+    81.923,193.298 81.549,193.672C81.173,194.047 81.173,194.654 81.549,195.029L88.077,201.557L81.549,208.084C81.174,208.459
+    81.174,209.066 81.549,209.441C81.922,209.816 82.531,209.816 82.905,209.44L89.433,202.912L95.961,209.44C96.335,209.816
+    96.943,209.815 97.318,209.44C97.692,209.066 97.693,208.458 97.317,208.084\" style=\"fill:rgb(232,198,29);fill-rule:nonzero;\"/>\n
+    \       </g>\n    </g>\n</svg>\n"
+  assetBundleName: 
+  assetBundleVariant: 
