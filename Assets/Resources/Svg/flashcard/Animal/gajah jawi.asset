@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4331990
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: gajah jawi
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 264
+    topology: 0
+    firstVertex: 0
+    vertexCount: 96
+    localAABB:
+      m_Center: {x: 0, y: 0, z: -0}
+      m_Extent: {x: 1.249995, y: 0.24999, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 00000100020001000000030004000500060007000800090007000a0008000b000a0007000c000a000b000d000a000c000d000e000a000f000e000d000f0010000e000f00110010000f0012001100060012000f0013000600050013001200060014001200130015001200140016001700180019001700160019001a001700190015001a001900120015001b00120019001c0012001b001d0012001c0012001d001e001f0008000a001f0020000800210020001f002100220020002100230022002400230021002500230024002500260023002700260025002600270028002900190016002a001900290019002a002b0005002c0013002d002c0005002d002e002c002d002f002e002f001800170018002f002d0030003100320030003300310034003300300035003300340035003600330037003600350038003600370038003900360038003a0039003b003a0038003b003c003a003d003c003b003e003c003d003f003c003e0040003c003f00400041003c004100400042004300310033004300440031004500440043004500460044004700460045004800460047004800490046004a00490048004b0049004a004c0049004b004d0049004c004e0049004d004e004f0049004e0050004f0050004e005100520053005400500053005200500055005300510055005000560055005100550056005700580059005a00590058005b005c005d005e005d005c005f00
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 5
+    m_VertexCount: 96
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1536
+    _typelessdata: d6ff9fbf61fd7fbe00000080ebebeb02d6ff9f3f61fd7f3e00000080ebebeb02d6ff9f3f61fd7fbe00000080ebebeb02d6ff9fbf61fd7f3e00000080ebebeb020aa286be7c6f53bd00000080ffffffffe67491be96a982bd00000080ffffffff3ac281be249823bd00000080ffffffffa08d833de635f6bd00000080ffffffff80def13ccad287bd00000080ffffffffa08d833da258aebd00000080ffffffff801411bce63fa4bd00000080ffffffff008b53beb21bf6bd00000080fffffffff0635cbe9291f3bd00000080ffffffff30b169bec608e1bd00000080ffffffff803453bed6faa2bd00000080ffffffff78ee6dbee649d2bd00000080fffffffff0025cbe2ed49abd00000080ffffffffb02f62be3ed08abd00000080ffffffff10666abee40720bd00000080ffffffff04dd86bef824e9bc00000080ffffffffc0ad83beb84ab0bc00000080ffffffff2eca84be00b1793b00000080ffffffff3099b2be141e6dbd00000080ffffffffc6b599be38548cbc00000080ffffffff14aeafbee4db74bd00000080ffffffffcea089be2827da3c00000080ffffffff6e818cbe8006d3ba00000080ffffffff166087bee818103d00000080ffffffffea6488be8c67503d00000080ffffffffd87c84be48d78c3d00000080ffffffff1c0881be902ca03d00000080ffffffffa01720bd04d96bbd00000080ffffffff406eccbce8839ebc00000080ffffffff30b6b0bdd42c09bd00000080ffffffffa0537abd20ad863b00000080ffffffff009aa8bd30d12e3c00000080ffffffff200bf8bd9864e4bc00000080ffffffffd06f0fbed849efbc00000080ffffffffb088cfbde02a243c00000080ffffffffc8a60cbe68dba2bc00000080ffffffffe88701be606683bb00000080ffffffffd091b4bee48d4cbd00000080ffffffff8a54b0bef40703bd00000080ffffffff8442acbe38afb1bc00000080ffffffff34e08bbe0ca705bd00000080ffffffff6a60a3be320d83bd00000080ffffffffba9698be049a08bd00000080ffffffffbab39ebe48d8f0bc00000080ffffffff0478b33eb21bf6bd00000080ffffffff7047b03e2aa089bd00000080fffffffffc9ab43e0eeecebd00000080ffffffff5ca3a63ee63fa4bd00000080ffffffffa82b0f3e1aa3f5bd00000080ffffffffc8fe023efafcf0bd00000080ffffffff10360c3ef6a6a2bd00000080fffffffff0fae53dfa0ad2bd00000080ffffffffa032de3d7a10bbbd00000080ffffffffb062fc3dca8e8dbd00000080ffffffffa091f63d741a69bd00000080ffffffffa02dc73d282d95bc00000080ffffffff30f9e33d7462563d00000080ffffffff3012ba3da8d9833d00000080ffffffffb0c0b03dcc1ea83d00000080ffffffff70b6993d02c1dc3d00000080ffffffff5073a03dc004ee3d00000080ffffffff003bd03dacff133e00000080ffffffff70a4c53d1249143e00000080ffffffffe007a83e2a589cbd00000080ffffffff4c55ab3ee4b853bd00000080ffffffffe84d9d3e942c60bd00000080ffffffffa00ba23ea8e9ecbc00000080ffffffffe436923ea4190bbd00000080ffffffffe4da883e58f8a5bc00000080ffffffff403a8d3ef068463c00000080ffffffff08a97d3ed0a807bc00000080fffffffff0e5753ee098d8bb00000080ffffffff70fc6b3e20eeebbb00000080ffffffffa0b95e3ec0a11cbb00000080ffffffffe0e2433e1851da3c00000080ffffffffe8b75f3e7445703d00000080ffffffff40d8603ef085893d00000080ffffffffa07b3f3e0c46253d00000080ffffffff7088733e28749e3d00000080ffffffff700ea83ef23c183e00000080ffffffff700ea83e8403e13d00000080ffffffff3807783e761ae93d00000080ffffffff9800453ecaa1853d00000080ffffffff58bc613ea228d03d00000080ffffffff30c5653e4a762c3e00000080ffffffff38b08d3e3c493a3e00000080ffffffff680a853e14051a3e00000080ffffffff98e8753e287e4c3e00000080ffffffff6022ccbd8dc339be00000080ffffffffa06a42bdeb782cbe00000080ffffffffb04e83bdc7804cbe00000080ffffffff005ca9bdadbb19be00000080ffffffff
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: -0}
+    m_Extent: {x: 1.249995, y: 0.24999, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: gajah jawi
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635944977135081200
+  _documentAsset: {fileID: 11452164}
+  _sharedMesh: {fileID: 4331990}
+  _antialiasing: 0
+  _antialiasingWidth: 0
+  _generateCollider: 0
+  _keepSVGFile: 0
+  _ignoreSVGCanvas: 1
+  _colliderShape: []
+  _format: 1
+  _useGradients: 1
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 0.5}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients: []
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  _layers: []
+--- !u!114 &11452164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: 
+  _title: 
+  _description: 

@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4349858
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: penyu jawi
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 264
+    topology: 0
+    firstVertex: 0
+    vertexCount: 100
+    localAABB:
+      m_Center: {x: 0, y: 0, z: -0}
+      m_Extent: {x: 1.249995, y: 0.24999, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 00000100020001000000030004000500060004000700050008000700040008000900070008000a00090008000b000a000c000b0008000c000d000b000c000e000d000f000e000c000f0010000e00110010000f001000110012001300140015001600140013001600170014001800170016001800190017001a00190018001b0019001a001c0019001b001c001d0019001e001d001c001e001f001d001f001e002000210022002300240022002100240025002200240026002500270026002400270028002600270029002800290027002a002b002c002d002b002e002c002b002f002e0009002f002b00300009000a0030002f000900300015002f0030001300150031001300300031003200130031003300320034003300310034003500330034003600350037003600340037001b0036001b0037001c0038002d002c00380039002d003a0039003800210039003a0023003900210023003b0039003c003b0023003c003d003b003e003d003c003e003f003d0029003f003e00290040003f002a0040002900410040002a004200400041004000420043002f0044002e00450044002f004600440045004600470044004800470046004800490047004a004900480049004a004b004c004d004e004d004c004f00500051005200510050005300540055005600550054005700580059005a00590058005b005c005d005e005d005c005f00600061006200610060006300
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 5
+    m_VertexCount: 100
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1600
+    _typelessdata: d6ff9fbf61fd7fbe00000080ebebeb02d6ff9f3f61fd7f3e00000080ebebeb02d6ff9f3f61fd7fbe00000080ebebeb02d6ff9fbf61fd7f3e00000080ebebeb0200449abd45341abe00000080ffffffff806441bdfeb2fbbd00000080ffffffff408571bd155c0cbe00000080ffffffffc0d5f3bcce67b9bd00000080ffffffff6089e7bdfb6124be00000080ffffffff803cc9bc660193bd00000080ffffffff803f95bdbe79eabd00000080ffffffffa091b6bd310d03be00000080ffffffffc01b09be036f21be00000080ffffffff48d101befb0a12be00000080ffffffff90b817be2b3a12be00000080ffffffff788423be7ded19be00000080ffffffff88fd35be297e0cbe00000080ffffffff38ae3dbed1c611be00000080ffffffff68dd3dbeff090ebe00000080ffffffffa0dc12bd74d31fbd00000080ffffffff40b5cfbc507031bc00000080ffffffff0056abbc7c3114bd00000080ffffffffa0a13fbd50294bbc00000080ffffffff00d700bd40be593c00000080ffffffff00f15dbda0abe7bb00000080ffffffff604c0fbdc086a73c00000080ffffffffb0f481bde00699bb00000080fffffffff0488ebd70e802bc00000080ffffffff305fbebdf87398bc00000080ffffffff80ca38bd2817f13c00000080ffffffff0094adbd0038043c00000080ffffffffb06383bd9006f03c00000080fffffffff09e9cbd08d7a33c00000080ffffffff80dd003e507d2ebc00000080ffffffff38b0053e78e2c73c00000080ffffffff98ff203ed863e93c00000080ffffffffc006d63de037a13b00000080ffffffffa031fa3dc0e6e33c00000080ffffffff50b5ef3d44bb0a3d00000080ffffffffe01fcf3d887f9f3c00000080ffffffffd043f13d84bb333d00000080ffffffff805cfb3da4e4553d00000080ffffffff3040d03d24a0093d00000080ffffffff30d83d3e660193bd00000080fffffffff8822d3edc8f14bd00000080fffffffff0633c3ea8f9d5bc00000080ffffffff00c89b3ddc8f14bd00000080ffffffffc0c1743d7c3114bd00000080ffffffff203417bd463396bd00000080ffffffff205d93bdde9387bd00000080ffffffff209c56bdfcb712bd00000080ffffffffb06a85bda41001bd00000080ffffffff403bb9bdcc3244bd00000080ffffffffe07990bde808c4bc00000080ffffffffb05995bd104c60bc00000080ffffffff2036bfbdb48d06bd00000080ffffffff50802a3ee03a8dbb00000080ffffffff70e3383e98bb963c00000080ffffffffc8a7103ed07127bc00000080ffffffff88b0313ee86f423d00000080ffffffffc0620f3e2484473d00000080ffffffff403a253ef64a993d00000080ffffffffc8dc053e9092573d00000080ffffffff3840203ede32a73d00000080ffffffff084d143eda5fb63d00000080ffffffffd09fdd3d3c87793d00000080ffffffff300feb3d0005973d00000080ffffffffa8d5003eaef0ae3d00000080ffffffff0097993d308d51bc00000080ffffffff80c3763db8b5bebc00000080ffffffff004c5a3d00cd12ba00000080ffffffff8030903d90b3b03c00000080ffffffff8012263d90206a3c00000080ffffffff8069753d04f52d3d00000080ffffffff60cc1d3dd0aacf3c00000080ffffffff200a513d00d4543d00000080ffffffff8059ac3dbc96303e00000080ffffffffc82f053e6a483c3e00000080ffffffff1025ec3dd61c203e00000080ffffffff40d7c93d6ccf4c3e00000080ffffffff807f9c3d221ff43d00000080ffffffffc0b4fa3d70f0053e00000080ffffffff0037dd3d5e16d33d00000080ffffffff40fdb93dbe52163e00000080ffffffff00e3f93dc0950c3e00000080ffffffffe8522c3ede1a183e00000080ffffffff80f11c3e64aff73d00000080ffffffff709b0b3e8043283e00000080ffffffff80c4a0bc895418be00000080ffffffff40cdd83c1ff40cbe00000080ffffffff0047493c439f28be00000080ffffffff00e596bb8ef3f7bd00000080ffffffff4084aa3c63be3cbe00000080fffffffff04e893d85dd30be00000080ffffffffe06d573d6dcf4cbe00000080ffffffff00e1113d9f6320be00000080ffffffff002ed63cb34106be00000080ffffffffe096933db2acf4bd00000080ffffffffa0906c3d859916be00000080ffffffff8012263d12e8d3bd00000080ffffffff
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: -0}
+    m_Extent: {x: 1.249995, y: 0.24999, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: penyu jawi
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635944977133922090
+  _documentAsset: {fileID: 11413798}
+  _sharedMesh: {fileID: 4349858}
+  _antialiasing: 0
+  _antialiasingWidth: 0
+  _generateCollider: 0
+  _keepSVGFile: 0
+  _ignoreSVGCanvas: 1
+  _colliderShape: []
+  _format: 1
+  _useGradients: 1
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 0.5}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients: []
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  _layers: []
+--- !u!114 &11413798
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: 
+  _title: 
+  _description: 

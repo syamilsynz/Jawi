@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4353620
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ayam jawi
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 153
+    topology: 0
+    firstVertex: 0
+    vertexCount: 61
+    localAABB:
+      m_Center: {x: 0, y: 0, z: -0}
+      m_Extent: {x: 1.249995, y: 0.24999, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 00000100020001000000030004000500060004000700050008000700040008000900070008000a0009000a0008000b000c000d000e000a000d000c000b000d000a000b000f000d000b0010000f00110010000b001000110012001300140015001600140013001600170014000e00170016000d0017000e000d0018001700190018000d001a00180019001a001b0018001c001b001a001c001d001b001e001d001c001f001d001e0020001d001f0021001d002000210022001d002300220021002200230024002500130015002500260013002700260025002800260027002800290026002a002900280029002a002b002c002d002e002c002f002d0030002f002c0031002f00300032002f003100320033002f0033003200340035003600370036003500380039003a003b003a0039003c00
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 5
+    m_VertexCount: 61
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 976
+    _typelessdata: d6ff9fbf61fd7fbe00000080ebebeb02d6ff9f3f61fd7f3e00000080ebebeb02d6ff9f3f61fd7fbe00000080ebebeb02d6ff9fbf61fd7f3e00000080ebebeb024073fdbdc7114bbe00000080ffffffff2012fabdfb9619be00000080ffffffff90f9f5bd2bc639be00000080ffffffffc8750abef242b3bd00000080ffffffffb8951cbe9a5fcdbd00000080fffffffff8b90abe8e109ebd00000080ffffffffb0ab00be963a81bd00000080ffffffff109b1fbe1eb6adbd00000080fffffffff07feebd44cb73bd00000080ffffffff409e64bd104f2fbc00000080ffffffffb096b0bd8c0159bd00000080ffffffff30c4d1bdf87b9bbc00000080ffffffff9014f1bd3805c0bc00000080ffffffffd84f1dbe2c396ebd00000080ffffffff302f10be8cc319bd00000080ffffffff30e7b23d644b48bd00000080ffffffff0038bebb50493abc00000080ffffffffc0198e3d50f825bc00000080ffffffff407464bdbc184abd00000080ffffffffc0e394bcb0b80dbc00000080ffffffffe0823abd308db43c00000080ffffffffa05da5bd80bb333c00000080ffffffff5018bbbd10b7513c00000080ffffffff402988bd60b9253d00000080fffffffff02dd3bdb0ab103c00000080ffffffff006d99bd14f6343d00000080ffffffff906ef2bd80c2813a00000080ffffffff9001f9bd00a32f3a00000080ffffffff70a2fdbd80ae533b00000080ffffffffa040ffbd407adf3b00000080ffffffff0075bfbd3455303d00000080ffffffff8085fabd20d7863c00000080ffffffff00c9e2bd3498063d00000080ffffffff3040903d40e81f3b00000080ffffffff004fac3d8c54183d00000080ffffffff800b843d8867d03c00000080ffffffff60ae4d3dc4b12e3d00000080ffffffff604e943d122c8e3d00000080ffffffff8042443d20f46c3d00000080ffffffff0097793d4838ad3d00000080ffffffff80fb0a3e04b257bd00000080ffffffff88db183e3831ebbc00000080ffffffffe0a60f3e8c333fbd00000080ffffffff1011203ee0b2183c00000080ffffffff0826003ea0a1bf3d00000080ffffffffe02df03db610243e00000080ffffffffb076fb3d0074383e00000080ffffffff60cc0d3e52f24a3e00000080ffffffff7039073e6ccf4c3e00000080ffffffff80074ebcc698fbbd00000080ffffffff0097163da21ee2bd00000080ffffffff807bac3c3f1d0fbe00000080ffffffff003e333b9ef4bebd00000080ffffffff805a133db689d3bd00000080ffffffffe0e8ae3d7225bbbd00000080ffffffff108d8e3d9ec9f7bd00000080ffffffff407f533dc26e98bd00000080ffffffff
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: -0}
+    m_Extent: {x: 1.249995, y: 0.24999, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: ayam jawi
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635944977134538520
+  _documentAsset: {fileID: 11437660}
+  _sharedMesh: {fileID: 4353620}
+  _antialiasing: 0
+  _antialiasingWidth: 0
+  _generateCollider: 0
+  _keepSVGFile: 0
+  _ignoreSVGCanvas: 1
+  _colliderShape: []
+  _format: 1
+  _useGradients: 1
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 0.5}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients: []
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  _layers: []
+--- !u!114 &11437660
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: 
+  _title: 
+  _description: 

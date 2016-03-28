@@ -636,6 +636,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 181010698}
+          m_MethodName: PlayMenuClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
@@ -1408,6 +1419,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 181010698}
+          m_MethodName: PlayMenuClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
@@ -1943,7 +1965,7 @@ MonoBehaviour:
   musicPlayer: {fileID: 181010697}
   effectPlayer: {fileID: 181010697}
   effectGame: {fileID: 181010697}
-  menuClickClip: {fileID: 8300000, guid: f353b186732fe468cadd8d0fc7fc47cb, type: 3}
+  menuClickClip: {fileID: 8300000, guid: 5b240cf2403f44c13b03da5445de1cb8, type: 3}
   letterClickClip: {fileID: 8300000, guid: b06f3430e51cf408fafc4c1856e6f9c0, type: 3}
   correctAnswerClip: {fileID: 8300000, guid: c7d774f47b056420694f2ace15a373a0, type: 3}
   wrongAnswerClip: {fileID: 8300000, guid: 0be9130a09e7046e6ad4748017b9deec, type: 3}
@@ -2121,17 +2143,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 181010696}
-        m_MethodName: SetActiveFalse
-        m_Mode: 2
+      - m_Target: {fileID: 181010698}
+        m_MethodName: PlayMenuClick
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 594078638}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!222 &191893689
@@ -3146,28 +3168,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 181010696}
-        m_MethodName: SetActiveFalse
-        m_Mode: 2
+      - m_Target: {fileID: 181010698}
+        m_MethodName: PlayMenuClick
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1046325648}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
-      - m_Target: {fileID: 181010696}
-        m_MethodName: SetActiveFalse
-        m_Mode: 2
+        m_CallState: 2
+      - m_Target: {fileID: 2142133771}
+        m_MethodName: CloseBuyHint
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 594078638}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!222 &290739640
@@ -3438,9 +3460,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 181010692}
-          m_MethodName: LoadLevel
-          m_Mode: 5
+        - m_Target: {fileID: 181010698}
+          m_MethodName: PlayMenuClick
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3448,7 +3470,7 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: main
             m_BoolArgument: 0
-          m_CallState: 0
+          m_CallState: 2
         - m_Target: {fileID: 9980845}
           m_MethodName: LoadLevelWithFadeAnimation
           m_Mode: 5
@@ -4471,17 +4493,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 181010696}
-          m_MethodName: SetActiveTrue
-          m_Mode: 2
+        - m_Target: {fileID: 181010698}
+          m_MethodName: PlayMenuClick
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 594078638}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
-          m_CallState: 0
+          m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
@@ -4844,28 +4866,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 181010696}
-        m_MethodName: SetActiveFalse
-        m_Mode: 2
+      - m_Target: {fileID: 181010698}
+        m_MethodName: PlayMenuClick
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1046325648}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
-      - m_Target: {fileID: 181010696}
-        m_MethodName: SetActiveFalse
-        m_Mode: 2
+        m_CallState: 2
+      - m_Target: {fileID: 2142133771}
+        m_MethodName: CloseBuyHint
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 594078638}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &555215783
@@ -9766,17 +9788,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 181010696}
-          m_MethodName: SetActiveTrue
-          m_Mode: 2
+        - m_Target: {fileID: 181010698}
+          m_MethodName: PlayMenuClick
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 594078638}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
-          m_CallState: 0
+          m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
@@ -10402,6 +10424,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2142133771}
         m_MethodName: CloseBuyCoin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 181010698}
+        m_MethodName: PlayMenuClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11529,28 +11562,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 181010696}
-        m_MethodName: SetActiveFalse
-        m_Mode: 2
+      - m_Target: {fileID: 181010698}
+        m_MethodName: PlayMenuClick
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1046325648}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
-      - m_Target: {fileID: 181010696}
-        m_MethodName: SetActiveFalse
-        m_Mode: 2
+        m_CallState: 2
+      - m_Target: {fileID: 2142133771}
+        m_MethodName: CloseBuyHint
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 594078638}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!222 &1343256616
@@ -13016,12 +13049,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 181010696}
-        m_MethodName: SetActiveFalse
-        m_Mode: 2
+      - m_Target: {fileID: 2142133771}
+        m_MethodName: CloseBuyHint
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1046325648}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 181010698}
+        m_MethodName: PlayMenuClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -14439,28 +14483,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 181010696}
-        m_MethodName: SetActiveFalse
-        m_Mode: 2
+      - m_Target: {fileID: 181010698}
+        m_MethodName: PlayMenuClick
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 1046325648}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
-      - m_Target: {fileID: 181010696}
-        m_MethodName: SetActiveFalse
-        m_Mode: 2
+        m_CallState: 2
+      - m_Target: {fileID: 2142133771}
+        m_MethodName: CloseBuyHint
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 594078638}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!222 &1682242975
@@ -17121,17 +17165,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 181010696}
-        m_MethodName: SetActiveFalse
-        m_Mode: 2
+      - m_Target: {fileID: 181010698}
+        m_MethodName: PlayMenuClick
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 594078638}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!222 &2012919351

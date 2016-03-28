@@ -19,3 +19,5 @@ EditorBuildSettings:
     path: Assets/Scenes/flash card/buah-buahan.unity
   - enabled: 1
     path: Assets/Scenes/flash card/macam-macam.unity
+  - enabled: 1
+    path: Assets/Scenes/flash card/binatang.unity

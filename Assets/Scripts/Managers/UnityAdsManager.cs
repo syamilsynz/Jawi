@@ -82,4 +82,38 @@ public class UnityAdsManager : MonoBehaviour
             Advertisement.Show("rewardedVideo", options);
         }
     }
+
+    public void ShowFlashCardRewardedAd(string name)
+    {
+        if (Advertisement.IsReady("rewardedVideo"))
+        {
+            //          var options = new ShowOptions { resultCallback = HandleShowResultCoinRewardedAd(300) };
+            var options = new ShowOptions { resultCallback = result => {
+                    switch(result)
+                    {
+                        case (ShowResult.Finished):
+                            Debug.Log("The ad was successfully shown.");
+                            //
+                            // YOUR CODE TO REWARD THE GAMER
+                            // Give coins etc.
+                            // Unlock flash card
+                            PlayerPrefs.SetString(name, name);
+                            FlashCard.Instance.CheckFeatureUnlock();
+
+                            UM_NotificationController.instance.ShowNotificationPoup("Unity Ads", "Dapat unlock " +  name + " flash card!");
+                            break;
+                        case (ShowResult.Failed):
+                            Debug.Log("The ad was skipped before reaching the end.");
+                            break;
+                        case(ShowResult.Skipped):
+                            Debug.LogError("The ad failed to be shown.");
+                            break;
+                    } 
+                }
+            };
+            Advertisement.Show("rewardedVideo", options);
+        }
+    }
+
+
 }

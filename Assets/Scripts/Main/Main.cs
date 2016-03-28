@@ -23,7 +23,7 @@ public class Main : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-        playerCoin.text = "Anda ada " + SaveManager.coinAmount.ToString();
+        playerCoin.text = SaveManager.coinAmount.ToString();
 
 	}
 
