@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4353842
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: landak jawi
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 309
+    topology: 0
+    firstVertex: 0
+    vertexCount: 113
+    localAABB:
+      m_Center: {x: 0, y: 0, z: -0}
+      m_Extent: {x: 1.249995, y: 0.24999, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 00000100020001000000030004000500060004000700050004000800070004000900080004000a0009000b000a0004000c000a000b000c000d000a000e000d000c000e000f000d0010000f000e00100011000f0012001100100011001200130005001400060015001400050015001600140015001700160015001800170019001800150019001a0018001a0019001b0008001c0007001d001c0008001e001c001d001e001f001c0020001f001e00200021001f00220021002000210022002300240014001600250009000a002500260009002700260025002800260027002800290026002a00290028002b0029002a002b002c0029002c002b002d002e002f00300031002f002e00310032002f00310033003200340033003100340035003300340036003500360034003700380039003a0038003b0039003c003b0038003c003d003b003e003d003c003f003d003e003f0040003d00410040003f0041004200400043004200410043004400420045004400430045004600440047004600450047004800460049004800470049004a0048004b004a0049004b004c004a004d004c004b004c004d004e004f00500051004f0052005000380052004f003a0052003800530052003a005400520053005400550052005600550054005700550056005700580055005900580057002e0058005900300058002e0030005a0058005b005a0030005b005c005a005d005c005b005d005e005c005f005e005d0036005e005f00360060005e0037006000360061006000370061006200600063006200610062006300640065006600670066006500680069006a006b006a0069006c006d006e006f006e006d007000
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 5
+    m_VertexCount: 113
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1808
+    _typelessdata: d6ff9fbf61fd7fbe00000080ebebeb02d6ff9f3f61fd7f3e00000080ebebeb02d6ff9f3f61fd7fbe00000080ebebeb02d6ff9fbf61fd7f3e00000080ebebeb02b82da23e5228c4bd00000080fffffffff00d963e44355ebd00000080ffffffff3cb4a03e2c9020bd00000080ffffffff30cb603e44355ebd00000080ffffffffd0534d3ed4005ebd00000080ffffffff30b7d43dd4005ebd00000080ffffffff20e6ab3ddc3862bd00000080ffffffff004ca63bd28cc5bd00000080ffffffff00ebe2bbf645c2bd00000080ffffffff80f32b3cec7d63bd00000080ffffffff8039c0bc1af6b4bd00000080ffffffff004137bc542d5bbd00000080ffffffff00ed07bd5ac98ebd00000080ffffffff801cbdbcb42833bd00000080ffffffffa08604bd9c3d50bd00000080ffffffff801fe3bcacf70dbd00000080ffffffff1ca8943e8234033e00000080ffffffff9886893ea002003e00000080ffffffff78549d3e72fe263e00000080fffffffff4809a3e67612f3e00000080ffffffff5c7c923e4486353e00000080ffffffff046a823e1843193e00000080fffffffff8458a3eaca8413e00000080fffffffffcd9873e66834c3e00000080ffffffff08645f3ee80ddbbc00000080ffffffff10a54d3e44731dbd00000080ffffffff105e443ed0b235bc00000080ffffffff78dc593e5094593c00000080ffffffff606d353e60cbb93b00000080ffffffff287b4d3eec211a3d00000080ffffffff1076333e20b5893c00000080ffffffffe80b433e1899473d00000080ffffffff708b9a3e3e74013e00000080ffffffff002daf3dbcc117bd00000080ffffffffc080cc3d90ff2dbc00000080ffffffff5059a63d40d471bb00000080ffffffff701b8a3db042ca3c00000080ffffffff60f8a83d34a74b3d00000080ffffffff0066373d302f403d00000080ffffffff406cf83c28c1623d00000080ffffffff4029623ddcd2aa3d00000080ffffffff405b0e3d5a9ec73d00000080ffffffff604006bef64582bd00000080ffffffffb031ddbdc847c4bc00000080ffffffff20a5c0bdc85f93bc00000080ffffffffb0d214be049571bd00000080fffffffff0cd06be18c7babc00000080ffffffffa8bc0dbe78fd82bc00000080ffffffff28da25be943f18bd00000080ffffffff80480fbe901c14bc00000080ffffffff68cb09bea0ae993b00000080ffffffffa83026be18bfb7bc00000080ffffffff603205be735042be00000080ffffffff9098d5bd5b1b0abe00000080ffffffff00e4c0bd910a03be00000080ffffffff705cfbbd2ba913be00000080ffffffff18f540be9f3c4cbe00000080ffffffff305624beebdd1fbe00000080ffffffffd0955fbe4d154cbe00000080ffffffff68527abea98748be00000080ffffffff481660be2bc122be00000080ffffffffbc2b8abe030e41be00000080ffffffffc45a84be59c51bbe00000080ffffffff6ef594be458635be00000080ffffffff0a2e8ebe0dfd13be00000080ffffffff1c08a1be89c810be00000080ffffffffca6c98be2a4eeebd00000080ffffffffd825a2bebef7f0bd00000080ffffffff2af198be068bc3bd00000080ffffffff70cea0be9e38b9bd00000080ffffffffb0a795bed4c56dbd00000080ffffffff78b499beb4381cbd00000080ffffffff80bc8fbed0d207bc00000080fffffffffc1394be50f556bc00000080ffffffff8e8891bee04ee9bb00000080ffffffffd065d1bdbd5236be00000080ffffffffb08580bdffa80dbe00000080ffffffff3047afbde17f2bbe00000080ffffffffc05071bdceabf3bd00000080ffffffff30f8a2bdc6e6e3bd00000080fffffffff0b194bdf689bcbd00000080ffffffff60ad6fbde24f8dbd00000080ffffffffd05f96bdce4a93bd00000080fffffffff04b9dbdb4f37dbd00000080ffffffff80ee7dbd585e9dbc00000080fffffffff020d6bd02de82bd00000080ffffffff20398ebd4090033c00000080ffffffff404dcdbd409020bb00000080ffffffff707ba9bd5422093d00000080ffffffffb0c0f0bd600f343c00000080ffffffff7062b6bd0c93293d00000080ffffffffa0b303bef0cc123c00000080ffffffffa083d5bd24af4e3d00000080ffffffff204e1ebe2056d43b00000080fffffffff02ef7bda8a44e3d00000080ffffffffc85411be0c85083d00000080ffffffffb8000bbe283f293d00000080ffffffff303c0dbed8d8053e00000080ffffffff4015acbdcaab133e00000080ffffffff6099d0bd30dde43d00000080ffffffff7055f9bdfe7d263e00000080ffffffff280a44bea2afe03d00000080ffffffff00220dbe0abafd3d00000080ffffffff204e1ebe2e73ba3d00000080ffffffff002a33be5e46113e00000080ffffffffc8a1153e8cb4d43d00000080ffffffffe0c84c3e44d8f03d00000080ffffffff60293b3e86acae3d00000080ffffffffb867263ef0550b3e00000080ffffffff
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: -0}
+    m_Extent: {x: 1.249995, y: 0.24999, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: landak jawi
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635947454613835180
+  _documentAsset: {fileID: 11460832}
+  _sharedMesh: {fileID: 4353842}
+  _antialiasing: 0
+  _antialiasingWidth: 0
+  _generateCollider: 0
+  _keepSVGFile: 0
+  _ignoreSVGCanvas: 1
+  _colliderShape: []
+  _format: 2
+  _useGradients: 1
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 0.5}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients: []
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  _layers: []
+--- !u!114 &11460832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: 
+  _title: 
+  _description: 

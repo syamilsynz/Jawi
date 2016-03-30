@@ -57,5 +57,11 @@ public class GuiMain : MonoBehaviour
         UnityAdsManager.Instance.ShowCoinRewardedAd(100);
     }
 
+    public void FreeCoin(int coin)
+    {
+        UnityAdsManager.Instance.ShowFreeCoinRewardedAd(coin);
+
+    }
+
 
 }

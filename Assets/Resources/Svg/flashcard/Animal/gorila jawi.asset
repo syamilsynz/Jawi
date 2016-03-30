@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4362512
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: gorila jawi
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 423
+    topology: 0
+    firstVertex: 0
+    vertexCount: 155
+    localAABB:
+      m_Center: {x: 0, y: 0, z: -0}
+      m_Extent: {x: 1.249995, y: 0.24999, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 0000010002000100000003000400050006000400070005000400080007000800040009000a000b000c000a000d000b000a000e000d0008000e000a000f0008000900100008000f0010000e000800100011000e0012001100100013001100120014001100130014001500110014001600150017001600140018001600170019001a001b00190018001a0019001600180019001c00160019001d001c001e001d0019001e001f001d0020001f001e001f00200021000d0022000b000d0023002200240023000d002500230024002600230025002700230026002700280023002900280027002a00280029002a002b0028002c002b002a002d002b002c002d002e002b002e002d002f003000310032002e00310030002f0031002e002f0033003100340033002f0033003400350036001300120036003700130036003800370039003800360039003a00380039003b003a0039001a003b001a0039001b0009003c000f003d003c0009003d003e003c003d003f003e0040003f003d00400041003f0041004000420043004400450046004400430046004700440046004800470049004800460049004a00480049004b004a0049004c004b004c0049004d004e004f00500051004f004e00510052004f005300520051005400520053005400550052005400560055005400570056005800570054004700570058005900470048005a00470059005a00570047005b0057005a005c0057005b005d0057005c0057005d005e005f0050004f005f0060005000610060005f006200600061006200630060006400630062006300640065006600670068006600690067006a00690066006a006b0069006c006b006a006d006b006c006b006d006e006f0070007100720070006f0072007300700068007300720067007300680074007300670075007300740075007600730077007600750077007800760079007800770079007a0078007b007a0079007b007c007a007d007c007b007c007d007e007f0080008100820080007f008200830080008400830082008500830084008600830085008700860088008700830086008700890083008a00890087008b0089008a008b008c0089008d008c008b008c008d008e008f009000910090008f009200930094009500940093009600970098009900980097009a00
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 5
+    m_VertexCount: 155
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 2480
+    _typelessdata: d6ff9fbf61fd7fbe00000080ebebeb02d6ff9f3f61fd7f3e00000080ebebeb02d6ff9f3f61fd7fbe00000080ebebeb02d6ff9fbf61fd7f3e00000080ebebeb02703a6b3e15743bbe00000080ffffffff3051853e47201ebe00000080ffffffffa8e97c3eebe72dbe00000080ffffffffe4588f3eaa52f3bd00000080ffffffff2862923efe5bc9bd00000080ffffffffe020433e7db844be00000080ffffffffd092e83efe5bc9bd00000080ffffffff4c38e53ee46245bd00000080ffffffff849fe93eae25a4bd00000080ffffffff641ade3ee4b06dbd00000080ffffffff38a2dc3e342d78bd00000080ffffffff60036b3e099d17be00000080fffffffff4ef8b3e3e01cdbd00000080ffffffff14d5933e342d78bd00000080ffffffff2c7d803e2e3ec5bd00000080ffffffff4c3d8c3eeaad81bd00000080ffffffffc065863e446a13bd00000080ffffffff9c2a903e90a87bbc00000080ffffffffcc898e3ea0fcc1bb00000080ffffffff601b823e1827f7bc00000080ffffffff5098793e1837e0bc00000080ffffffff789e5a3e3c493abd00000080ffffffffe892733efc1400bd00000080ffffffff187e593edc3862bd00000080ffffffffb824883e00f8fc3b00000080ffffffffc026833e60602b3c00000080ffffffffd0f65f3ef8c6d7bc00000080ffffffff30697c3e10e4203c00000080ffffffffd082673ed0ec01bc00000080ffffffffe0c86c3e0038473900000080ffffffffa076e03e542209bd00000080ffffffff68f2d53e502f06bc00000080ffffffffd842c83ee8a084bc00000080fffffffff49dc03e60cea5bb00000080ffffffff8c71b63e2012f73b00000080ffffffffb807b23e40de2b3c00000080ffffffffd0edbd3e28a9133d00000080ffffffff8c6caf3e0005fa3b00000080ffffffffdc69ac3ef0cc123c00000080ffffffff54c1b03e80a3643d00000080ffffffffdcfe9d3ec05eef3c00000080ffffffff14b49a3ea0d11d3d00000080ffffffff7c18a93ed235933d00000080ffffffffa0599a3e20c44e3d00000080ffffffffc09fb23ef4e0ae3d00000080fffffffff020de3e1ac01b3e00000080fffffffff020de3e9c6dee3d00000080ffffffff40d4b53e6ed8f63d00000080ffffffff20079d3e7493983d00000080fffffffff407ab3eda5adf3d00000080ffffffff58576e3ebe91b9bd00000080ffffffff689b833eecfe78bd00000080ffffffff406f7a3e7c0569bd00000080ffffffff88dc5c3eb24b94bd00000080ffffffff78bf733e441b47bd00000080ffffffffe01c703eec211abd00000080ffffffff10405a3e0f8424be00000080ffffffff58492d3e998641be00000080ffffffff60e9333e95c131be00000080ffffffff38851e3ea39731be00000080ffffffff60cd113eb74539be00000080ffffffff203cfa3d21242bbe00000080ffffffffa0f0eb3debe72dbe00000080ffffffff8234abbed6ecc1bd00000080ffffffffb40b95be4c2451bd00000080ffffffffd49a9ebeb2a79dbd00000080ffffffff4cb9babe2adad5bd00000080ffffffffbca489be803ac73a00000080ffffffffbabd9cbe24b509bd00000080ffffffff0c89c3be0aced9bd00000080ffffffff8212aebed42772bd00000080ffffffffe2f2b7be06258cbd00000080ffffffff8cd1e2be2e4dcabd00000080ffffffffbca4e9be9e46dabd00000080ffffffff380f5ebec603cabd00000080ffffffff4057fbbd34207bbd00000080ffffffff705bd7bdc603cabd00000080ffffffff80b66cbe7a4ac7bd00000080ffffffff50cb66be246c78bd00000080ffffffff401880be2adfacbd00000080ffffffffb2ef82bef61f92bd00000080ffffffffe8de73bec4b252bd00000080ffffffff905777be9c2625bd00000080ffffffffc8da7dbe202ba4bb00000080ffffffff164888bea064e4bb00000080ffffffffca8e95be58158cbc00000080fffffffff47a8fbe6053ae3b00000080ffffffffde548cbe44d3593d00000080ffffffff7cae8ebe6e34c03d00000080ffffffff205e8fbeb185003e00000080ffffffff38108abe30121a3e00000080ffffffffd04bfabddc2a41bd00000080ffffffff602ddebdf0e35abc00000080ffffffffb0ac04be3873babc00000080ffffffffb88c12bee05be6bb00000080ffffffff1004f6bd30e1973c00000080ffffffffa09b14bea05a993b00000080ffffffff00a406beb86b093d00000080ffffffffc0cba8bcb72d4abe00000080ffffffff000f223dd7ff19be00000080ffffffff002a113bb35e4cbe00000080ffffffff0070aa39f3d22dbe00000080ffffffff809f31bdc54744be00000080ffffffffc0b830bdc55f33be00000080ffffffffd08ca5bd3dfc35be00000080ffffffffb00db5bd05c52fbe00000080ffffffffa082b1bdc91f2cbe00000080ffffffffe01e453d7bdf38be00000080ffffffffe0bcc33d27a500be00000080ffffffffc05a9c3dcfc21ebe00000080ffffffff40248b3cbb6b49be00000080ffffffff50a0cc3d629de3bd00000080ffffffff706f903df2eff3bd00000080ffffffffd025a73d4e15ccbd00000080ffffffff7076d23d1ac09bbd00000080ffffffff0020b23df246a6bd00000080ffffffffe0a3d03d8caa26bd00000080ffffffff5014a53d9cd241bd00000080ffffffff1040ca3dc8cfb8bc00000080ffffffff608e7b3d48959abc00000080ffffffffa0e1a63df0e60c3c00000080ffffffff00217c3da054fb3b00000080ffffffffe0d28a3d78f2b03c00000080ffffffffdc6898bec04b433b00000080ffffffffb0a29ebebcb2523d00000080fffffffffa0a9abee88ff73c00000080ffffffff14edb2be58ad8c3d00000080ffffffff3233abbe1c03b23d00000080ffffffff82e7b6be6e869b3d00000080ffffffffeaa3bbbe92e8a53d00000080ffffffff9057bfbe348aa53d00000080ffffffff0ca1d2be549fab3d00000080ffffffffc02bcabee2369a3d00000080ffffffffc4e1c4bef5d6003e00000080ffffffff94f6debec499df3d00000080ffffffff5430e2befc30023e00000080ffffffff8a4fd9be4417143e00000080ffffffff5ea2e2be94130d3e00000080ffffffffd639debebe52163e00000080ffffffff588b1fbe3b7a1cbe00000080ffffffff408edbbdcd0b10be00000080ffffffff0028fbbd1b172ebe00000080ffffffffd80710bec6c9fdbd00000080ffffffffa89a50be4f0130be00000080ffffffff48081fbe692723be00000080ffffffff08c82ebe695741be00000080ffffffffc08f41be990d12be00000080ffffffffe83fac3e1ec42e3e00000080ffffffffd43ec53ed66e3b3e00000080ffffffff943bbd3ea4701d3e00000080ffffffff700db43ea4884c3e00000080ffffffff
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: -0}
+    m_Extent: {x: 1.249995, y: 0.24999, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: gorila jawi
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635947454613400280
+  _documentAsset: {fileID: 11486588}
+  _sharedMesh: {fileID: 4362512}
+  _antialiasing: 0
+  _antialiasingWidth: 0
+  _generateCollider: 0
+  _keepSVGFile: 0
+  _ignoreSVGCanvas: 1
+  _colliderShape: []
+  _format: 2
+  _useGradients: 1
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 0.5}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients: []
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  _layers: []
+--- !u!114 &11486588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: 
+  _title: 
+  _description: 

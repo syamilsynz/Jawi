@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: b16f62e8dd8db4c638466536055e2ba0
+timeCreated: 1459200909
+licenseType: Free
+NativeFormatImporter:
+  userData: "<?xml version=\"1.0\" standalone=\"no\"?>\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD
+    SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\n<svg width=\"100%\"
+    height=\"100%\" viewBox=\"0 0 160 31\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"
+    xmlns:xlink=\"http://www.w3.org/1999/xlink\" xml:space=\"preserve\" style=\"fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;\">\n
+    \   <g transform=\"matrix(1,0,0,1,-616.144,-614.718)\">\n        <g transform=\"matrix(4.16667,0,0,4.16667,0,0)\">\n
+    \           <g transform=\"matrix(0.24,0,0,0.24,52.4095,0.403291)\">\n                <rect
+    x=\"397.77\" y=\"613.038\" width=\"159.822\" height=\"30.525\" style=\"fill:white;fill-opacity:0.01;\"/>\n
+    \           </g>\n        </g>\n        <g transform=\"matrix(4.16667,0,0,4.16667,0,0)\">\n
+    \           <g transform=\"matrix(0.24,0,0,0.220419,52.4315,13.0051)\">\n                <path
+    d=\"M557.5,619.981C557.5,614.652 553.527,610.326 548.633,610.326L406.638,610.326C401.744,610.326
+    397.77,614.652 397.77,619.981L397.77,633.908C397.77,639.237 401.744,643.563 406.638,643.563L548.633,643.563C553.527,643.563
+    557.5,639.237 557.5,633.908L557.5,619.981Z\" style=\"fill:white;\"/>\n            </g>\n
+    \       </g>\n    </g>\n</svg>\n"
+  assetBundleName: 
+  assetBundleVariant: 

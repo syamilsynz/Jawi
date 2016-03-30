@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4386514
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: kambing jawi
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 360
+    topology: 0
+    firstVertex: 0
+    vertexCount: 134
+    localAABB:
+      m_Center: {x: 0, y: 0, z: -0}
+      m_Extent: {x: 1.249995, y: 0.24999, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 00000100020001000000030004000500060007000800090007000a0008000b000a0007000b000c000a000b000d000c000b000e000d000f000e000b000f0010000e00060010000f000500100006000500110010000500120011001200050013000a0014000800150014000a001500160014001700160015001800160017001800190016001a00190018001a001b0019001c001b001a001d001b001c001d001e001b001d001f001e0020001f001d00200021001f0021002000220023000c000d0024000c002300240025000c0012002500240013002500120013002600250013002700260013002800270013002900280013002a00290013002b002a0013002c002b002d002c0013002e002c002d002e002f002c0030002f002e00300031002f003000320031003300320030003300340032003500340033003500360034003700360035003700380036003800370039003a003b003c003a003d003b003e003d003a003e003f003d0040003f003e00400041003f0042004100400042004300410042004400430042004500440046004500420046004700450046004800470049004800460049004a004800490039004a004900380039004b00380049004b004c0038004d004c004b004e004c004d004f004c004e004f0050004c00510050004f00520050005100530050005200530054005000550054005300560054005500560057005400580057005600570058005900260027005a002a005b0029005c005b002a005d005b005c005d005e005b005f005e005d005f0060005e00610060005f006000610062002c0063002b00640063002c00650063006400650066006300670066006500670068006600690068006700680069006a006b006c006d001e006c006b006c001e001f006e006f0070006f006e0071007200730074007300720075007600770078007700760079007a007b007c007b007a007d007e007f0080007f007e008100820083008400830082008500
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 5
+    m_VertexCount: 134
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 2144
+    _typelessdata: d6ff9fbf61fd7fbe00000080ebebeb02d6ff9f3f61fd7f3e00000080ebebeb02d6ff9f3f61fd7fbe00000080ebebeb02d6ff9fbf61fd7f3e00000080ebebeb028005c93dc800fbbc00000080ffffffffd009a53dc4422dbd00000080ffffffff90b5d83d98b3b0bc00000080ffffffff60b1b73eac6447bd00000080ffffffffd06bb43e801fba3a00000080fffffffff0c5b83e585df9bc00000080ffffffff74cdac3e505637bc00000080ffffffffb8162f3e2c9144bd00000080ffffffffd0144a3e505637bc00000080ffffffffd06f2f3ef0784cbc00000080ffffffff50b51f3e50de0ebc00000080ffffffff888a013e8ca50fbd00000080ffffffffa8f2063ea0368e3b00000080ffffffffd075fa3d3097623c00000080ffffffff1013fb3df0478a3c00000080ffffffff40c34d3d0c6946bd00000080ffffffffb8b0af3e78e8823c00000080ffffffffb815a33ef09f603c00000080ffffffffc442a53e20e5273d00000080ffffffffe080973e94d4093d00000080ffffffffa071893efce8543d00000080ffffffff70698d3edcb0ad3d00000080ffffffff289c663e949f943d00000080ffffffffc8f4743e82b2e93d00000080ffffffff38e4563e48a7ae3d00000080ffffffff3867543ee8f1bb3d00000080ffffffff98aa763ea96a023e00000080ffffffff2801923eef8f373e00000080ffffffff28b4553eecdddf3d00000080ffffffff5888703e44121d3e00000080ffffffff2811633e261e103e00000080ffffffff805b273ec0f3603c00000080fffffffff83f173e30b21d3d00000080ffffffff80ec253e78978b3d00000080ffffffff18ad133ed074763d00000080ffffffff5053ab3d40ba033b00000080ffffffffa018443d30eb45bc00000080ffffffffc0fadc3c10f11dbc00000080ffffffff00911b3c10e134bc00000080fffffffff0899cbd10e134bc00000080ffffffffa0edbfbdd06e3bbc00000080ffffffff487249bed4fb46bd00000080ffffffff80fb6abe041338bd00000080ffffffffa08e57be509a31bc00000080fffffffff87e7abe9cb723bd00000080ffffffff680163be30690cbc00000080ffffffff787a75bea04d9c3b00000080ffffffffb4d188be3844a3bc00000080ffffffff20937cbec06b6c3c00000080ffffffffc0098dbea016bcbb00000080ffffffffd0d06fbe2070eb3c00000080ffffffffbab895be986588bc00000080ffffffff30206bbe7c6f533d00000080ffffffff0022a5beecfb29bd00000080ffffffff68c15bbecf6b4cbe00000080ffffffff383b29beb31128be00000080ffffffff58e251becf8d49be00000080ffffffffd07e74be5f9d23be00000080ffffffffc20d90be352945be00000080ffffffff52d085be977820be00000080ffffffff3c9b9dbee3143dbe00000080ffffffff6ad49bbef1e112be00000080ffffffffbc48b0be21ba20be00000080ffffffff52d0a5be393706be00000080ffffffff06e1a9be12e3fcbd00000080ffffffff6e39afbeb298d8bd00000080ffffffff4251b8bec68ff1bd00000080ffffffffc6bab0bef64fb0bd00000080ffffffffb241aebe628987bd00000080ffffffff0e67b6be36b095bd00000080ffffffff987cabbed41e68bd00000080ffffffff7cedb1be8c894dbd00000080ffffffff384473be8c937b3d00000080ffffffff7437a7be3890a0bc00000080ffffffff8e2c98bee00d5b3c00000080ffffffffdcb095be209dba3c00000080ffffffff8e0181be588b8f3d00000080ffffffffca8497be400fee3c00000080fffffffff0809abeb011083d00000080ffffffff54d99fbed8acfa3c00000080ffffffffca5489be08ce993d00000080ffffffff3c49a2be3041d43c00000080ffffffff628da2bed4a4143d00000080ffffffffb0a28ebe1cfe9a3d00000080ffffffff54529fbee023623d00000080fffffffffa3a98bee8e78d3d00000080fffffffff058f73d10c2233d00000080ffffffff40fcd23cf0176c3c00000080ffffffff00c52c3c009eea3a00000080ffffffff0080873b407dcb3c00000080ffffffffc0e8ab3c003a4c3d00000080ffffffff80011fbca05e293d00000080ffffffff80b9253c0c8e923d00000080ffffffff00ec40bc00d0613d00000080ffffffff00406d3a02caa63d00000080ffffffffb0ca9ebdc0545e3c00000080ffffffffe083bebd00c3013b00000080ffffffff70f8cbbd4039d13c00000080ffffffff30b4a8bd80c04a3d00000080ffffffffa03be8bd80212b3d00000080ffffffff7011bfbdae2f923d00000080ffffffffe0cbebbd187c613d00000080ffffffff20eed1bd9495a63d00000080ffffffffcc4f823e1c08093e00000080ffffffffdc77ad3e06864c3e00000080ffffffffdc77ad3e8e7a283e00000080ffffffff20768ebed6bbbf3d00000080ffffffff70bf73be02d4d43d00000080ffffffff582580be0c15a33d00000080ffffffffaed887bef8fcf03d00000080ffffffff80e173be902ce03d00000080ffffffff20884abe4863f43d00000080ffffffff18fa57be627ac23d00000080ffffffffb02967beb85d083e00000080ffffffffc00dd8bd7629aebd00000080ffffffff004685bd9a5b9abd00000080fffffffff014a0bdc234ccbd00000080ffffffff001bbebd44657cbd00000080ffffffffe08116bd7a2cbdbd00000080ffffffff00b4653b76aba7bd00000080ffffffff00911bbca284d9bd00000080ffffffff80fdc8bcb2b18bbd00000080ffffffffe8f68abe9e7b0f3e00000080fffffffff8896cbea6d0193e00000080ffffffffc8ee79beb532013e00000080ffffffffc09584beaa26283e00000080ffffffffa8e714be3632cfbd00000080ffffffffb0ddd6bd365ebabd00000080ffffffff4024f1bd1e85ebbd00000080ffffffff480308be2eb29dbd00000080ffffffff
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: -0}
+    m_Extent: {x: 1.249995, y: 0.24999, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: kambing jawi
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635948528275298150
+  _documentAsset: {fileID: 11486164}
+  _sharedMesh: {fileID: 4386514}
+  _antialiasing: 0
+  _antialiasingWidth: 0
+  _generateCollider: 0
+  _keepSVGFile: 0
+  _ignoreSVGCanvas: 1
+  _colliderShape: []
+  _format: 1
+  _useGradients: 1
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 0.5}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients: []
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  _layers: []
+--- !u!114 &11486164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: 
+  _title: 
+  _description: 
