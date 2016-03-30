@@ -30,7 +30,7 @@ public class FlashCard : MonoBehaviour
 
     }
 
-
+    // -----------------------------------------------------------------------------
 
     [Space(5)] [Header("Flash Card Details")] [Space(5)] 
     public FlashCardTemplate[] flashcardTemplate;       // Set of question/answer for animal
@@ -89,17 +89,23 @@ public class FlashCard : MonoBehaviour
                 
             // Set Color
             clone.transform.FindChild("TemplateCard").GetComponent<SVGImage>().material = flashcardTemplate[i].templateColor;
+            clone.transform.FindChild("TemplateCard Hole").GetComponent<SVGImage>().material = flashcardTemplate[i].templateColor;
 
             // Lock or Unlock
             if (flashcardTemplate[i].unlock == true)
             {
                 clone.transform.FindChild("flashcardImage").GetComponent<SVGImage>().color = new Color32(255, 255, 255, 255);
+
+                clone.transform.FindChild("TemplateCard").gameObject.SetActive(true);
+                clone.transform.FindChild("TemplateCard Hole").gameObject.SetActive(false);
         
             }
             else
             {
-//                clone.transform.FindChild("flashcardImage").GetComponent<SVGImage>().color = new Color32(100, 100, 1001, 255);
                 clone.transform.FindChild("flashcardImage").GetComponent<SVGImage>().color = new Color32(0, 0, 0, 255);
+
+                clone.transform.FindChild("TemplateCard").gameObject.SetActive(false);
+                clone.transform.FindChild("TemplateCard Hole").gameObject.SetActive(true);
             }
         }
 
@@ -209,8 +215,12 @@ public class FlashCard : MonoBehaviour
             yield return null;
         }
 
-        musicSource.clip = flashcardTemplate[svgIndex].audioAsset;
-        musicSource.Play ();    
+        if (flashcardTemplate[svgIndex].unlock)
+        {
+            musicSource.clip = flashcardTemplate[svgIndex].audioAsset;
+            musicSource.Play ();
+//            PlayAudio();
+        }
 
         isPlaying = false;
 
@@ -236,8 +246,12 @@ public class FlashCard : MonoBehaviour
             yield return null;
         }
 
-        musicSource.clip = flashcardTemplate[svgIndex].audioAsset;
-        musicSource.Play ();
+        if (flashcardTemplate[svgIndex].unlock)
+        {
+            musicSource.clip = flashcardTemplate[svgIndex].audioAsset;
+            musicSource.Play ();
+//            PlayAudio();
+        }
 
      
 
@@ -257,15 +271,16 @@ public class FlashCard : MonoBehaviour
 
     public void CheckFeatureUnlock()
     {
+//        PlayerPrefs.DeleteAll();
         flashCardName = flashcardTemplate[svgIndex].svgFlashImage.name;
 
         if (PlayerPrefs.HasKey(flashCardName))
         {
             flashcardTemplate[svgIndex].unlock = true;
 
-            btnCoin.gameObject.SetActive(false);
-            btnWatchAds.gameObject.SetActive(false);
-            btnIAP.gameObject.SetActive(false);
+//            btnCoin.gameObject.SetActive(false);
+//            btnWatchAds.gameObject.SetActive(false);
+//            btnIAP.gameObject.SetActive(false);
         }
         else
         {
@@ -275,63 +290,73 @@ public class FlashCard : MonoBehaviour
             {
                 flashcardTemplate[svgIndex].unlock = true;
                 // Unlock flash card
-//                PlayerPrefs.SetString(flashCardName, flashCardName);
-                btnCoin.gameObject.SetActive(false);
-                btnWatchAds.gameObject.SetActive(false);
-                btnIAP.gameObject.SetActive(false);
+//                btnCoin.gameObject.SetActive(false);
+//                btnWatchAds.gameObject.SetActive(false);
+//                btnIAP.gameObject.SetActive(false);
             }
             else if (flashcardTemplate[svgIndex].isCoinDependency)
             {
                 // Open related to coin
                 flashcardTemplate[svgIndex].unlock = false;
+                this.transform.GetChild(svgIndex).transform.FindChild("TemplateCard Hole").FindChild("Text").GetComponent<Text>().text = flashcardTemplate[svgIndex].price.ToString();
 
-                btnCoin.gameObject.SetActive(true);
-                btnWatchAds.gameObject.SetActive(false);
-                btnIAP.gameObject.SetActive(false);
+//                btnCoin.gameObject.SetActive(true);
+//                btnWatchAds.gameObject.SetActive(false);
+//                btnIAP.gameObject.SetActive(false);
             }
             else if (flashcardTemplate[svgIndex].isWatchRewardedAd)
             {
                 // Open related to ads
                 flashcardTemplate[svgIndex].unlock = false;
+                this.transform.GetChild(svgIndex).transform.FindChild("TemplateCard Hole").FindChild("Text").GetComponent<Text>().text = "Watch Ad";
 
-                btnCoin.gameObject.SetActive(false);
-                btnWatchAds.gameObject.SetActive(true);
-                btnIAP.gameObject.SetActive(false);
+//                btnCoin.gameObject.SetActive(false);
+//                btnWatchAds.gameObject.SetActive(true);
+//                btnIAP.gameObject.SetActive(false);
             }
             else if (flashcardTemplate[svgIndex].isIAP)
             {
                 // Open related to in app purchase
                 flashcardTemplate[svgIndex].unlock = false;
-
-                btnCoin.gameObject.SetActive(false);
-                btnWatchAds.gameObject.SetActive(false);
-                btnIAP.gameObject.SetActive(true);
+                this.transform.GetChild(svgIndex).transform.FindChild("TemplateCard Hole").FindChild("Text").GetComponent<Text>().text = "Buy IAP";
+//                btnCoin.gameObject.SetActive(false);
+//                btnWatchAds.gameObject.SetActive(false);
+//                btnIAP.gameObject.SetActive(true);
             }
         }
 
         if (flashcardTemplate[svgIndex].unlock)
         {
             this.transform.GetChild(svgIndex).transform.FindChild("flashcardImage").GetComponent<SVGImage>().color = new Color32(255, 255, 255, 255);   
+
+            this.transform.GetChild(svgIndex).transform.FindChild("TemplateCard").gameObject.SetActive(true);
+            this.transform.GetChild(svgIndex).transform.FindChild("TemplateCard Hole").gameObject.SetActive(false);
         }
         else
         {
             this.transform.GetChild(svgIndex).transform.FindChild("flashcardImage").GetComponent<SVGImage>().color = new Color32(0, 0, 0, 255);
+
+            this.transform.GetChild(svgIndex).transform.FindChild("TemplateCard").gameObject.SetActive(false);
+            this.transform.GetChild(svgIndex).transform.FindChild("TemplateCard Hole").gameObject.SetActive(true);
         }
     }
 
     public void UnlockFlashCard()
     {
-        // If already unlock
-        if (PlayerPrefs.HasKey(flashCardName))
-        {
-            flashcardTemplate[svgIndex].unlock = true;
+            // If need coin/price/iap to unlock
+            if (flashcardTemplate[svgIndex].isCoinDependency == true)
+            {
 
-            // Hide all button related to buying
-        }
-        else
-        {
-            
-        }
+                UnlockFlashCardUsingCoin();
+            }
+            else if (flashcardTemplate[svgIndex].isWatchRewardedAd == true)
+            {
+                UnlockFlashCardUsingRewardedAd();
+            }
+            else if (flashcardTemplate[svgIndex].isIAP == true)
+            {
+                UnlockFlashCardUsingIAP();
+            }
     }
 
     public void UnlockFlashCardUsingIAP()
@@ -346,7 +371,13 @@ public class FlashCard : MonoBehaviour
         {
             // Unlock this feature if payment successfull
 
-            IABManager.Instance.BuyNonConsumableProduct(flashCardName);
+            // Unlock flash card
+            PlayerPrefs.SetString(flashCardName, flashCardName);
+
+            // Hide all button related to buying
+            CheckFeatureUnlock();
+
+//            IABManager.Instance.BuyNonConsumableProduct(flashCardName);
 
 
         }

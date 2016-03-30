@@ -35,6 +35,13 @@ public class GUIManager : MonoBehaviour
     public Animator animBuyCoin;
     public Animator animBuyHint;
 
+    static GUIManager instance;
+    public static GUIManager Instance { get { return instance; } }
+
+    void Awake()
+    {
+        instance = this;
+    }
 	// Use this for initialization
 	void Start () 
     {
@@ -75,7 +82,6 @@ public class GUIManager : MonoBehaviour
 
     public void BuyCoin(int value)
     {
-
 
 
     }
@@ -182,6 +188,24 @@ public class GUIManager : MonoBehaviour
         UM_ShareUtility.ShareMedia("Hint", "Tolong, apa jawapan jawi ni? \n download game JAWI di sini https://play.google.com/store/apps/details?id=com.ingeniworks.jawi", tex);
 
         Destroy(tex);
+
+    }
+
+    public void RewardDoubleCoinWithReductionFirst()
+    {
+        // This function will reduce the coin receive before and then double it
+        int coin = gameManager.coinReceive;
+        UnityAdsManager.Instance.ShowDoubleCoinRewardedAd(coin, true);
+    }
+
+    public void RewardDoubleCoin(int coin)
+    {
+        UnityAdsManager.Instance.ShowDoubleCoinRewardedAd(coin);
+    }
+
+    public void FreeRewardedCoin(int coin)
+    {
+        UnityAdsManager.Instance.ShowFreeCoinRewardedAd(coin);
 
     }
 

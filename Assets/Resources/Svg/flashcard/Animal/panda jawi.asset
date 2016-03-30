@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!43 &4315166
+Mesh:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: panda jawi
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 237
+    topology: 0
+    firstVertex: 0
+    vertexCount: 91
+    localAABB:
+      m_Center: {x: 0, y: 0, z: -0}
+      m_Extent: {x: 1.249995, y: 0.24999, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 00000100020001000000030004000500060004000700050008000700040009000700080009000a0007000b000a0009000c000a000b000c000d000a000d000c000e000f00100011000f00120010000f00130012000f0014001300150014000f00150016001400170016001500170018001600170019001800190017001a001b001c001d001b001e001c001b001f001e001b0005001f001b0006000500200006001b002100060020002200060021002200230006002400230022002400250023002600250024002700250026002700280025002800270029002a001d001c002a002b001d002c002b002a002c002d002b0011002d002c0010002d00110010002e002d002f002e00100030002e002f00300031002e003200310030003200330031001900330032001a00330019001a00340033001a0035003400360035001a003500360037001f0038001e00390038001f003a00380039003a003b0038003c003b003a003c003d003b003e003d003c003d003e003f00400041004200400043004100440043004000450043004400450046004300470046004500480046004700490046004800460049004a004b004c004d004c004b004e004f005000510050004f005200530054005500540053005600570058005900580057005a00
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 5
+    m_VertexCount: 91
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1456
+    _typelessdata: d6ff9fbf61fd7fbe00000080ebebeb02d6ff9f3f61fd7f3e00000080ebebeb02d6ff9f3f61fd7fbe00000080ebebeb02d6ff9fbf61fd7f3e00000080ebebeb02004c03bdda8afdbd00000080ffffffff00bf1abc3b1e13be00000080ffffffffa0b90ebda71414be00000080ffffffff807c6dbc66afb7bd00000080ffffffff604d16bdaa65abbd00000080ffffffff00eb5cbd243743bd00000080ffffffffe0cd13bdf0e06ebc00000080ffffffff101da9bd48c494bc00000080ffffffff6068cebd6040d9bb00000080ffffffffb09d8fbde0b4e03c00000080ffffffffb0fbc3bd0013383d00000080ffffffffd035433e9e0ccebd00000080ffffffffb072803e64294bbd00000080ffffffffa8ee533e3e0ad7bd00000080ffffffffd0e46b3e9c395dbd00000080ffffffff30995a3e4cdc63bd00000080ffffffff98fb4d3e34f44fbd00000080ffffffff381a303ee661a1bd00000080fffffffff020463e0c712cbd00000080ffffffff28ea2e3e2c977fbd00000080ffffffff103c473e88c5e1bc00000080ffffffff58574e3e70267cbc00000080ffffffff6058353e184cc3bc00000080ffffffff7425933e439f48be00000080ffffffffa81e8a3e21b012be00000080ffffffff14af933ee70f06be00000080ffffffff4026093e21b012be00000080ffffffff00c2e03d3b1e13be00000080ffffffff385d06be439f48be00000080ffffffff08e514be3be446be00000080ffffffffd8ea29bed95a3fbe00000080ffffffff40d309becd5814be00000080ffffffff484b35be7f9f31be00000080ffffffff686f20be31a80fbe00000080ffffffffd85538be1bce1cbe00000080ffffffffc02537be61760fbe00000080ffffffffa0012cbe476d02be00000080ffffffffd81c30be3624eebd00000080ffffffff98f1873e9e9dccbd00000080ffffffff648d923e7e448cbd00000080ffffffff600b713e36eed4bd00000080ffffffff84ca903e543541bd00000080ffffffff40fb893ea053aebb00000080ffffffff5813743e8c2d04bd00000080ffffffffe02f683e5805a3bc00000080ffffffff5449853ea0e96c3c00000080ffffffff60675a3ed0956cbc00000080ffffffff287a813e2878d13c00000080ffffffffe8f26f3e58c51b3d00000080ffffffffd0485b3e7ced193d00000080ffffffffe0fd413e4002543c00000080ffffffff58fc483eb04fc73c00000080ffffffff5878073e2a36dfbd00000080ffffffff40a5e33db1e600be00000080ffffffffe07ad13da24ec0bd00000080ffffffff6099003e8cf972bd00000080ffffffff0033aa3d766891bd00000080ffffffffb06ae23de81fefbc00000080fffffffff076a43d441754bd00000080ffffffff307dc83dd0f37dbc00000080ffffffff584286be297e4cbe00000080ffffffff805670bea3fc04be00000080ffffffffe8a97ebe374f35be00000080ffffffffb02470beae8bdbbd00000080ffffffff220689be42ffc4bd00000080ffffffff74548dbed0df21bc00000080ffffffff982f7fbe30733a3d00000080ffffffffd44893beac8b9b3d00000080ffffffff324693be048bc33d00000080ffffffff845a8bbe48fe003e00000080ffffffff54f685bee2cc0f3e00000080ffffffff4014153e2922233e00000080ffffffff40ad593e6570343e00000080ffffffff588c433efc8c0b3e00000080fffffffff8582a3ec7804c3e00000080ffffffff50be093e22e5a73d00000080ffffffff384a4e3e06b6ca3d00000080ffffffffa0b1383e501d723d00000080ffffffffe01f1f3e7610fb3d00000080ffffffff086e4d3e16f1dd3d00000080fffffffff411893e785dff3d00000080ffffffff10107c3e3862ad3d00000080ffffffff80c2623e2e95173e00000080ffffffff60d02d3d4c4f583d00000080ffffffffa0fbe03d3a708e3d00000080ffffffff2080b43d508cf33c00000080ffffffffe038823de622be3d00000080ffffffff
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: -0}
+    m_Extent: {x: 1.249995, y: 0.24999, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: panda jawi
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 635947454613564020
+  _documentAsset: {fileID: 11481046}
+  _sharedMesh: {fileID: 4315166}
+  _antialiasing: 0
+  _antialiasingWidth: 0
+  _generateCollider: 0
+  _keepSVGFile: 0
+  _ignoreSVGCanvas: 1
+  _colliderShape: []
+  _format: 2
+  _useGradients: 1
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 0.5}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients: []
+  _sharedShaders:
+  - SVG Importer/SolidColor/SolidColorAlphaBlended
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  _layers: []
+--- !u!114 &11481046
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363e9872ad27a4ca59c07d233fdf0023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _errors: 
+  _svgFile: 
+  _title: 
+  _description: 

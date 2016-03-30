@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!43 &4331990
+--- !u!43 &4322758
 Mesh:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -139,16 +139,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
   m_Name: gajah jawi
   m_EditorClassIdentifier: 
-  _lastTimeModified: 635944977135081200
+  _lastTimeModified: 635947958634855570
   _documentAsset: {fileID: 11452164}
-  _sharedMesh: {fileID: 4331990}
+  _sharedMesh: {fileID: 4322758}
   _antialiasing: 0
   _antialiasingWidth: 0
   _generateCollider: 0
   _keepSVGFile: 0
   _ignoreSVGCanvas: 1
   _colliderShape: []
-  _format: 1
+  _format: 2
   _useGradients: 1
   _meshCompression: 0
   _optimizeMesh: 1
